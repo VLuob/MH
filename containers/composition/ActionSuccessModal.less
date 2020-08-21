@@ -1,0 +1,55 @@
+.action-success-modal {
+  text-align: center;
+
+  .action-success-title {
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.55;
+
+    .anticon {
+      color: #52C41A;
+
+    }
+  }
+
+  .action-success-intro {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666666;
+    line-height: 28px;
+  }
+
+  .action-success-content {
+    padding: 20px 0;
+
+    ul {
+      text-align: left;
+
+      li {
+        display: inline-block;
+        // margin-bottom: 10px;
+        width: calc(50% - 10px);
+        vertical-align: top;
+
+        &:nth-child(2n - 1) {
+          margin-right: 10px;
+        }
+        &:nth-child(2n) {
+          margin-left: 10px;
+        }
+
+        .cover {
+          img {
+            max-width: 100%;
+            border-radius: 3px;
+          }
+        }
+
+        .title {
+          padding-top: 10px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}

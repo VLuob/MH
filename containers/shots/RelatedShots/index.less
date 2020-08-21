@@ -1,0 +1,141 @@
+.related-shots {
+  // position: absolute;
+  padding: 0;
+  width: 100%;
+  background-color: transparent;
+}
+.related-shots-container {
+  width: initial;
+  color: #999999;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: #999999;
+    height: 82px;
+  }
+
+  .title {
+    font-size: 18px;
+    color: #333333;
+  }
+  .change {
+    font-size: 12px;
+    cursor: pointer;
+
+    .anticon {
+      font-size: 12px;
+    }
+  }
+  .auto {
+    font-size: 12px;
+  }
+
+  .related-shots-list {
+
+  }
+  .related-shots-item {
+    margin-bottom: 20px;
+
+    .cover {
+      position: relative;
+
+      img {
+        max-width: 100%;
+        border-radius: 4px;
+      }
+
+      .video-4k {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        font-size: 18px;
+        color: white;
+      }
+
+      .video-duration {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        font-size: 12px;
+        line-height: 1;
+        color: white;
+        padding: 2px 5px;
+        border-radius: 2px;
+        background-color: rgba(0,0,0,0.5);
+      }
+
+      .video-play {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, .65);
+        font-size: 12px;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        box-shadow: 0 0 5px rgba(255,255,255,.5);
+        transition: box-shadow .3s;
+        
+        &:hover {
+          box-shadow: 0 0 10px rgba(255,255,255,1);
+        }
+      }
+    }
+    .content {
+      padding: 10px 0;
+
+      .title {
+        font-size: 14px;
+        line-height: 1.7;
+        a {
+          color: #666666;
+
+          &:hover {
+            color: @primary-color;
+          }
+        }
+      }
+      .intro {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 12px;
+        
+        a {
+          color: #999999;
+        }
+
+        .ant-avatar {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  .loading-more {
+    background: #EEEEEE;
+    border-radius: 4px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #888888;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .page-end {
+    color: #888888;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px 0;
+  }
+}

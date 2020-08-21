@@ -1,0 +1,225 @@
+@font-Light: PingFangSC-Light;
+@font-Medium: PingFangSC-Medium;
+@font-Regular: PingFangSC-Regular;
+@font-Semibold: PingFangSC-Semibold;
+
+@white: #fff;
+@black: #000;
+
+@text-lightest: #EEEEEE;
+@text-lighter: #EAEAEA;
+@text-light: #BBBBBB;
+
+@text-base: #191919;                             // 字体色
+@text-title: #444444;                            // 标题色
+@text-assistant: #888888;                        // 副色
+@text-heading: #A4A4A4;                          // 主导航色
+@text-subheading: #666666;                       // 内容色
+@text-subnav: #282828;                           // 子导航色
+@text-explain: #999999;                          // 说明色
+@text-placeholder: #9C9C9D;                      // 占位符色 
+
+// @background-color: #f0f2f5;                      // 背景色
+@background-color: #f9f9f9;                      // 背景色
+@theme-color: @text-base;                          // 主题色
+// @primary-color: #008CD6;                         // 全局主色
+@primary-color: #168DD7;                         // 全局主色
+@link-color: @primary-color;                       // 链接色
+@link-menu-color: #0F83C6;                       // 菜单链接色
+@success-color: #52c41a;                         // 成功色
+@warning-color: #FF6F13 ;                        // 警告色
+@error-color: #f5222d;                           // 错误色
+@font-size-base: 14px;                             // 主字号
+@heading-color: rgba(0, 0, 0, .85);              // 标题色
+@text-color: rgba(0, 0, 0, .65);                 // 主文本色
+@text-color-secondary : rgba(0, 0, 0, .45);      // 次文本色
+@disabled-color : rgba(0, 0, 0, .25);            // 失效色
+@border-radius-base: 4px;                          // 组件/浮层圆角
+@border-color-base: #E1E1E1;                     // 边框色
+@box-shadow-base: 0 2px 8px rgba(0, 0, 0, .15);  // 浮层阴影
+
+// Outline
+@outline-blur-size: 0;
+@outline-width: 2px;
+@outline-color: @link-color;
+
+@background-color-light: hsv(0, 0, 98%); // background of header and selected item
+@background-color-base: hsv(0, 0, 96%); // Default grey background color
+
+// Disabled states
+@disabled-color: fade(#000, 25%);
+@disabled-bg: @background-color-base;
+@disabled-color-dark: fade(#fff, 35%);
+
+// Background color for `<body>`
+@body-background: #fff;
+// Base background color for most components
+@component-background: #fff;
+@font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+@code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+@text-color: fade(@black, 65%);
+@text-color-secondary: fade(@black, 45%);
+
+@text-color-inverse: @white;
+@icon-color: inherit;
+@icon-color-hover: fade(@black, 75%);
+@heading-color: fade(#000, 85%);
+@heading-color-dark: fade(@white, 100%);
+@text-color-dark: fade(@white, 85%);
+@text-color-secondary-dark: fade(@white, 65%);
+@text-selection-bg: @primary-color;
+@font-variant-base: tabular-nums;
+@font-feature-settings-base: 'tnum';
+@font-size-base: 14px;
+@font-size-lg: @font-size-base + 2px;
+@font-size-sm: 12px;
+@heading-1-size: ceil(@font-size-base * 2.71);
+@heading-2-size: ceil(@font-size-base * 2.14);
+@heading-3-size: ceil(@font-size-base * 1.71);
+@heading-4-size: ceil(@font-size-base * 1.42);
+@line-height-base: 1.5;
+@border-radius-base: 4px;
+@border-radius-sm: 2px;
+
+// Border color
+@border-color-base: hsv(0, 0, 85%); // base border outline a component
+@border-color-split: hsv(0, 0, 91%); // split border inside a component
+@border-color-inverse: @white;
+@border-width-base: 1px; // width of the border for a component
+@border-style-base: solid; // style of a components border
+
+// vertical paddings
+@padding-lg: 24px; // containers
+@padding-md: 16px; // small containers and buttons
+@padding-sm: 12px; // Form controls and items
+@padding-xs: 8px; // small items
+
+// vertical padding for all form controls
+@control-padding-horizontal: @padding-sm;
+@control-padding-horizontal-sm: @padding-xs;    
+
+// Layout
+@layout-header-background: @text-base;
+@layout-footer-background: @text-base;
+@layout-header-height: 58px;
+@layout-header-padding: 0 30px;
+@layout-footer-padding: 0 5.73%;
+@layout-sider-background: @white;
+@layout-trigger-height: 48px;
+@layout-trigger-background: #002140;
+@layout-trigger-color: #fff;
+@layout-zero-trigger-width: 36px;
+@layout-zero-trigger-height: 42px;
+
+
+// Layout light theme
+@layout-sider-background-light: #fff;
+@layout-trigger-background-light: #fff;
+@layout-trigger-color-light: @text-color;
+
+// input
+@input-height-base: 32px;
+@input-height-lg: 48px;
+@input-height-sm: 24px;
+@input-padding-horizontal: @control-padding-horizontal - 1px;
+@input-padding-horizontal-base: @input-padding-horizontal;
+@input-padding-horizontal-sm: @control-padding-horizontal-sm - 1px;
+@input-padding-horizontal-lg: @input-padding-horizontal;
+@input-padding-vertical-base: 4px;
+@input-padding-vertical-sm: 1px;
+@input-padding-vertical-lg: 6px;
+@input-placeholder-color: hsv(0, 0, 75%);
+@input-color: @text-color;
+@input-border-color: @border-color-base;
+@input-bg: #fff;
+@input-number-handler-active-bg: #f4f4f4;
+@input-addon-bg: @background-color-light;
+@input-hover-border-color:@link-color;
+@input-disabled-bg: @disabled-bg;
+@input-outline-offset: 0 0;
+
+@btn-font-weight: 400;
+@btn-border-radius-base: @border-radius-base;
+@btn-border-radius-sm: @border-radius-base;
+@btn-border-width: @border-width-base;
+@btn-border-style: @border-style-base;
+@btn-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+@btn-primary-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+@btn-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+
+@btn-primary-color: #fff;
+@btn-primary-bg: @primary-color;
+
+@btn-default-color: @text-color;
+@btn-default-bg: #fff;
+@btn-default-border: @border-color-base;
+
+@btn-danger-color: @error-color;
+@btn-danger-bg: @background-color-base;
+@btn-danger-border: @border-color-base;
+
+@btn-disable-color: @disabled-color;
+@btn-disable-bg: @disabled-bg;
+@btn-disable-border: @border-color-base;
+
+@btn-padding-base: 0 @padding-md - 1px;
+@btn-font-size-lg: @font-size-lg;
+@btn-font-size-sm: @font-size-base;
+@btn-padding-lg: @btn-padding-base;
+@btn-padding-sm: 0 @padding-xs - 1px;
+
+@btn-height-base: 32px;
+@btn-height-lg: 48px;
+@btn-height-sm: 24px;
+
+@btn-circle-size: @btn-height-base;
+@btn-circle-size-lg: @btn-height-lg;
+@btn-circle-size-sm: @btn-height-sm;
+
+@tabs-card-head-background: @background-color-light;
+@tabs-card-height: 40px;
+@tabs-card-active-color: @link-color;
+@tabs-title-font-size: @font-size-base;
+@tabs-title-font-size-lg: @font-size-lg;
+@tabs-title-font-size-sm: @font-size-base;
+@tabs-ink-bar-color: @link-color;
+@tabs-bar-margin: 0 0 16px 0;
+@tabs-horizontal-margin: 0 32px 0 0;
+@tabs-horizontal-padding: 12px 16px;
+@tabs-horizontal-padding-lg: 16px;
+@tabs-horizontal-padding-sm: 8px 16px;
+@tabs-vertical-padding: 8px 24px;
+@tabs-vertical-margin: 0 0 16px 0;
+@tabs-scrolling-size: 32px;
+@tabs-highlight-color: @link-color;
+@tabs-hover-color: @link-menu-color;
+@tabs-active-color: @link-color;
+
+// Menu
+// ---
+@menu-inline-toplevel-item-height: 40px;
+@menu-item-height: 40px;
+@menu-collapsed-width: 80px;
+@menu-bg: @component-background;
+@menu-popup-bg: @component-background;
+@menu-item-color: @text-color;
+@menu-highlight-color: @primary-color;
+// @menu-item-active-bg: @primary-color;
+// @menu-item-active-border-width: 3px;
+@menu-item-group-title-color: @text-color-secondary;
+// dark theme
+@menu-dark-color: @text-color-secondary-dark;
+@menu-dark-bg: @layout-header-background;
+@menu-dark-arrow-color: #fff;
+@menu-dark-submenu-bg: @theme-color;
+@menu-dark-highlight-color: #fff;
+@menu-dark-item-active-bg: @theme-color;
+
+// Modal
+// --
+@modal-body-padding: 24px;
+@modal-header-bg: @component-background;
+@modal-footer-bg: transparent;
+@modal-mask-bg: fade(@black, 65%);

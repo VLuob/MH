@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="69px" height="50px" viewBox="0 0 69 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>fabuzuopin_icon_01 copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="360" y="177" width="1200" height="1298"></rect>
+        <filter x="-0.3%" y="-0.2%" width="100.6%" height="100.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="410" y="342" width="238" height="170" rx="3"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="238" height="170" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-发布作品--空状态--" transform="translate(-495.000000, -373.000000)">
+            <rect fill="#F9F9F9" x="0" y="0" width="1920" height="1548"></rect>
+            <g id="矩形">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <use id="Rectangle-2" stroke="#BBBBBB" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="3" xlink:href="#path-3"></use>
+            <g id="Group-23" transform="translate(453.000000, 373.000000)" fill="#BBBBBB">
+                <path d="M79.5,40 L87.8362412,40 C87.9377227,40 88.0368019,39.9691203 88.1203139,39.9114641 C88.3475592,39.754575 88.4045943,39.4431726 88.2477053,39.2159273 L76.7864311,22.6148878 C76.7520309,22.5650609 76.7088666,22.5218966 76.6590397,22.4874964 C76.4317944,22.3306074 76.120392,22.3876424 75.9635029,22.6148878 L64.5022288,39.2159273 C64.4445725,39.2994393 64.4136929,39.3985185 64.4136929,39.5 C64.4136929,39.7761424 64.6375505,40 64.9136929,40 L73.25,40 L73.25,50 L57.625,50 C48.9955508,50 42,43.0044492 42,34.375 C42,25.7455508 48.9955508,18.75 57.625,18.75 L58.25,18.75 C58.25,8.39466094 66.6446609,0 77,0 C87.3553391,0 95.75,8.39466094 95.75,18.75 C95.75,18.7540908 95.7499987,18.7581812 95.7499961,18.7622714 C104.089706,19.0903343 110.75,25.9548697 110.75,34.375 C110.75,43.0044492 103.754449,50 95.125,50 L79.5,50 L79.5,40 Z" id="fabuzuopin_icon_01"></path>
+            </g>
+        </g>
+    </g>
+</svg>

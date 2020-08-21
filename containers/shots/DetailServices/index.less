@@ -1,0 +1,66 @@
+.shots-detail-service {
+  margin-left: -20px;
+  margin-right: -20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .shots-service-item {
+    margin: 0 20px 20px;
+    display: flex;
+    align-items: center;
+    width: calc(50% - 40px);
+    
+    .service-cover {
+      position: relative;
+      width: 150px;
+      border-radius: 4px;
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+      }
+
+      .form-tag {
+        position: absolute;
+        left: 5px;
+        bottom: 5px;
+        display: inline-block;
+        padding: 3px 5px;
+        background: rgba(0,0,0,0.50);
+        border-radius: 2px;
+        font-size: 12px;
+        color: white;
+        line-height: 1;
+      }
+    }
+
+    .service-info {
+      margin-left: 15px;
+      flex: 1;
+
+      .service-name {
+        font-size: 18px;
+        color: #333333;
+        letter-spacing: 0;
+        line-height: 28px;
+        height: 56px;
+        text-overflow: ellipsis;
+        overflow:hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        a {
+          color: #333333;
+        }
+      }
+      .service-price {
+        margin-top: 15px;
+        font-size: 16px;
+        color: #666666;
+        line-height: 1;
+      }
+    }
+  }
+}

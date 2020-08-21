@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>1:1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-作品详情全屏模式-" transform="translate(-1058.000000, -805.000000)" stroke="#979797">
+            <g id="分组-3" transform="translate(763.000000, 804.000000)">
+                <g id="1:1" transform="translate(295.000000, 1.000000)">
+                    <path d="M1,1 L1,0 L0,1 L1,1 Z M2.66106054,1 L5.06134257,1 L4.35134215,-0.704201253 L2.66106054,1 Z M1,2.67473953 L-0.710000419,4.39882197 L1,5.10302323 L1,2.67473953 Z M19,1 L20,1 L19,0 L19,1 Z M19,2.65133974 L19,5.06308029 L20.706594,4.35546108 L19,2.65133974 Z M17.3462642,1 L15.6361673,-0.707619219 L14.9295733,1 L17.3462642,1 Z M19,19 L19,20 L20,19 L19,19 Z M17.4598975,19 L15.0009277,19 L15.698851,20.7161725 L17.4598975,19 Z M19,17.4991414 L20.6979234,15.8444836 L19,15.1283111 L19,17.4991414 Z M1,19 L0,19 L1,20 L1,19 Z M1,17.4440423 L1,15.083133 L-0.695766275,15.8014012 L1,17.4440423 Z M2.60627934,19 L4.38011863,20.7182683 L5.0758849,19 L2.60627934,19 Z" id="形状" stroke-width="2"></path>
+                    <rect id="矩形" x="5.5" y="5.5" width="1" height="9"></rect>
+                    <rect id="矩形-copy-32" x="13.5" y="5.5" width="1" height="9"></rect>
+                    <rect id="矩形" x="9.5" y="7.5" width="1" height="1"></rect>
+                    <rect id="矩形-copy-34" x="9.5" y="11.5" width="1" height="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

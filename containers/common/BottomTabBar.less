@@ -1,0 +1,41 @@
+.bottom-tab-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 -1px 2px rgba(0,0,0,.15);
+  
+  .bottom-tabs {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tab-item {
+    padding: 6px 20px;
+    text-align: center;
+    line-height: 1;
+
+    &.active {
+
+      a {
+        color: @primary-color;
+      }
+    
+    }
+    
+    a {
+      color: #999999;
+    }
+
+    .tab-icon {
+      font-size: 20px;
+    }
+
+    .name {
+      margin-top: 5px;
+      font-size: 10px;
+    }
+  }
+}

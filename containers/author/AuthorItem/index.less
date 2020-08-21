@@ -1,0 +1,217 @@
+.author-item-box {
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EEEEEE;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .author-info-wrapper {
+    display: flex;
+    align-items: flex-start;
+    width: 380px;
+    line-height: 1;
+
+    .author-avatar {
+      margin-right: 15px;
+      width: 80px;
+    }
+    .author-content {
+      margin-right: 15px;
+    }
+    .nick {
+      font-size: 20px;
+      color: #333333;
+      line-height: 1.5;
+    }
+    .intro {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #999999;
+
+      .area {
+        margin-left: 10px;
+      }
+    }
+    .stat {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #333333;
+
+      .divider {
+        margin: 0 10px;
+        color: #999999;
+      }
+    }
+    .btns {
+      margin-top: 25px;
+
+      .ant-btn {
+        min-width: 100px;
+        height: 32px;
+        font-size: 14px;
+        border-radius: 16px;
+
+        &:not(:first-child) {
+          margin-left: 20px;
+        }
+
+        &.followed {
+          border: none;
+          color: #999999;
+          background-color: #f1f1f1;
+        }
+      }
+    }
+  }
+
+  .author-shots-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .author-shots-list {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .author-shots-extra {
+    width: 20px;
+
+    .btn-more {
+      font-size: 32px;
+      color: rgba(22,141,215,0.50);
+
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+
+  .author-shots-item {
+    position: relative;
+    margin-right: 20px;
+    width: 238px;
+
+    .cover {
+      border-radius: 3px;
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .icon-video {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+    .form-tag, .service-tag {
+      position: absolute;
+      bottom: 5px;
+      padding: 3px 5px;
+      border-radius: 2px;
+      font-size: 12px;
+      color: white;
+      line-height: 1;
+    }
+    .form-tag {
+      left: 5px;
+      background: rgba(0,0,0,0.50);
+    }
+    .service-tag {
+      right: 5px;
+      background: #FF5B00;
+    }
+  }
+}
+
+
+// 移动端样式
+.author-item-box-mobile {
+  padding: 20px 15px;
+  border-bottom: 1px solid #f9f9f9;
+
+  .author-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .author-avatar {
+    margin-right: 10px;
+    width: 60px;
+  }
+  .author-content {
+    
+    .nick {
+      font-size: 14px;
+      color: #191919;
+    }
+    .intro {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #666666;
+      line-height: 1;
+    }
+    .area {
+      margin-left: 10px;
+    }
+    .stat {
+      margin-top: 6px;
+      font-size: 12px;
+      line-height: 1;
+      
+      a {
+        color: #999999;
+      }
+
+      .divider {
+        margin: 0 5px;
+        color: #cccccc;
+      }
+    }
+  }
+  .author-actions {
+    margin-left: 10px;
+
+    .btn-enquiry {
+      min-width: 80px;
+      height: 30px;
+      border-radius: 15px;
+      background-color: rgba(22,141,215,0.1);
+      color: @primary-color;
+      font-size: 13px;
+      border: none;
+    }
+  }
+
+  .author-shots-wrapper {
+    margin-top: 20px;
+  }
+  .author-shots-list {
+    margin-left: -5px;
+    margin-right: -5px;
+    display: flex;
+  }
+  .author-shots-item {
+    position: relative;
+    margin: 0 5px;
+    width: calc(33.3333% - 10px);
+    
+    .cover {
+      overflow: hidden;
+      border-radius: 3px;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+}

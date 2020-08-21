@@ -1,0 +1,64 @@
+
+.current-favorites-content {
+    padding: 0 15px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.current-favorites-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid @border-color-base;
+
+    .name {
+        cursor: pointer;
+
+        &:hover {
+            color: @primary-color;
+        }
+    }
+
+    .btn {
+        float: right;
+
+        .ant-btn {
+            min-width: 80px;
+            height: 38px;
+        }
+    }
+}
+
+.current-favorite-add {
+    padding-top: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.edit-favorites-form {
+
+
+    .form-field {
+        padding: 10px 0;
+    }
+
+    .form-field-submit {
+        margin-top: 20px;
+        text-align: center;
+
+        .ant-btn {
+            min-width: 100px;
+            height: 38px;
+
+            &:first-child {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .ingore {
+        font-size: 13px;
+        color: #999999;
+    }
+}
+

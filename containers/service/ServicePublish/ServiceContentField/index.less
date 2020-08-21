@@ -1,0 +1,33 @@
+.service-content-section {
+  position: relative;
+  
+  .btn-remove {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #999999;
+    cursor: pointer;
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+}
+.service-content-field-group {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  .field-name {
+    flex: 1;
+  }
+  .field-price {
+    margin-left: 20px;
+    width: 275px;
+  }
+}
+

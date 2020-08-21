@@ -1,0 +1,371 @@
+.shots-edit-top {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+
+  .top-item {
+    padding: 20px 0;
+    display: inline-block;
+    // width: 50%;
+    font-size: 14px;
+    color: #333;
+    line-height: 40px;
+    border-bottom: 0;
+  }
+
+  .top-info-item {
+    line-height: 2.4;
+    color: #999999;
+  }
+
+  .top-left {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+
+  .top-right {
+    float: right;
+    text-align: right;
+    
+
+  }
+
+  .nav-tip-box {
+    position: absolute;
+    margin-top: 12px;
+    // width: 250px;
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 4px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -46px;
+      right: 16px;
+      width: 0;
+      height: 0;
+      border-width: 0 6px 6px;
+      border-style: solid;
+      border-color: transparent transparent rgba(0, 0, 0, 0.5);
+      margin: 40px auto;
+    }
+
+    .nav-tip-close {
+      margin-left: 10px;
+      cursor: pointer;
+      color: #cccccc;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+.shots-publish-menu-box {
+  position: absolute;
+  left: -30px;
+  top: 20px;
+  transform: translateX(-100%);
+  padding: 10px 30px;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  background-color: white;
+
+  .publish-menu-item {
+    padding: 10px 0;
+    font-size: 14px;
+    
+    a {
+      color: #999999;
+
+      &.btn-normal {
+        display: inline;
+      }
+      &.btn-mini {
+        display: none;
+      }
+    }
+    &.active, &:hover {
+      a {
+        color: #333333;
+      }
+    } 
+
+    .text {
+      margin-left: 10px;
+    }
+    
+  }
+}
+
+.shots-edit-bottom {
+  margin: 30px auto 60px;
+  width: 1200px;
+
+  .bottom-handle-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bottom-handle-intro {
+    a {
+      color: #999999;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+
+  .bottom-handle-list {
+    margin-bottom: 20px;
+  }
+  .bottom-handle-item {
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  .ant-btn {
+    height: 38px;
+    line-height: 38px;
+    min-width: 80px;
+  }
+  .publish-btns {
+    float: right;
+  }
+}
+
+.form-container.shots-upload-box {
+
+  margin: 0 auto 30px auto;
+}
+
+.shots-upload-box {
+  margin: 0 auto;
+
+  .form-item-shots {
+    margin-bottom: 0;
+  }
+  .form-item-shots .shots-upload-area {
+    padding: 0;
+    border: none;
+
+    .ant-upload-list {
+      margin-left: -10px;
+      margin-right: -10px;
+      padding: 20px 0;
+    }
+
+    .ant-upload-list-item {
+      margin: 0 10px 20px 10px;
+      width: 260px;
+      height: 186px;
+    }
+  }
+
+  .ant-upload.ant-upload-btn .ant-upload {
+    padding: 0;
+  }
+
+  .upload-icon-item {
+    display: inline-block;
+    padding: 0px 50px;
+
+    &:first-child {
+      border-right: 1px solid #eee;
+    }
+  }
+  .upload-icon-img {
+    float: left;
+  }
+  .upload-icon-info {
+    display: inline-block;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 14px;
+
+    .info-title {
+      color: #333;
+    }
+    .info-desc {
+      margin-top: 5px;
+      color: #999;
+
+    }
+  }
+
+  .shots-upload-icon-area {
+    position: relative;
+    
+    .upload-icon-area-box {
+      padding: 50px 0 20px;
+    }
+
+    &.has-shots {
+      .upload-icon-area-box {
+        position: absolute;
+        width: 260px;
+        height: 186px;
+        z-index: 100;
+        padding: 0;
+        background-color: #F4F6F9;
+        top: 50px;
+        border-radius: 3px;
+
+        .upload-bigicon-img {
+          margin-top: 40px;
+          img {
+            width: 53px;
+          }
+        }
+        .upload-bigicon-title {
+          margin-top: 10px;
+        }
+        .upload-bigicon-text {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .upload-bigicon-img {
+      margin-top: 20px;
+    }
+    .upload-bigicon-title {
+      margin-top: 20px;
+      font-size: 20px;
+      color: @primary-color;
+    }
+    .upload-bigicon-text {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #bbb;
+    }
+  }
+
+  .shots-upload-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+
+    .publish-info-text a {
+      color: #999;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+ 
+}
+
+.form-container.shots-edit-form-box {
+  margin-bottom: 0;
+
+  .category-item {
+    width: 400px;
+
+    .select-left {
+      width: calc(100% - 10px);
+    }
+
+    .col-form .select-left {
+      float: right;
+    }
+  }
+  .ant-form-item {
+
+    .author-select, .tags-box {
+      width: 400px;
+    }
+    
+    .author-select {
+      height: 50px;
+
+      .domain {
+        margin-top: 2px;
+      }
+
+      .user-identity .ant-tag {
+        padding: 1px 3px !important;
+      }
+
+
+      
+    }
+    .ant-select-selection {
+      padding: 0;
+    }
+
+    .cover-uploader .ant-upload-select {
+      width: 260px;
+      height: 186px;
+    }
+
+    input[type="text"], 
+    input[type="file"], 
+    .ant-select-selection, 
+    .ant-calendar-picker .ant-calendar-picker-input {
+      height: 42px;
+      line-height: 42px;
+    }
+    .ant-select-selection__placeholder {
+      line-height: 1.75;
+    }
+    .attach-file .ant-upload .ant-btn {
+      height: 42px;
+    }
+    .textarea-summary {
+      margin-bottom: 0;
+      min-height: 194px;
+    }
+
+    .tags-box {
+      padding: 0 16px;
+      min-height: 42px;
+
+      .ant-tag {
+        border: 1px dashed #E1E1E1 !important;
+        // color: #ccc;
+        color: #999999;
+     
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 1440px) {
+  .shots-publish-menu-box {
+    padding: 5px 0;
+    left: -20px;
+  
+    .publish-menu-item {
+      padding: 10px;
+      font-size: 18px;
+      text-align: center;
+      
+      a {
+        &.btn-normal {
+          display: none;
+        }
+        &.btn-mini {
+          display: inline;
+        }
+      }
+      
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .shots-publish-menu-box  {
+    left: -15px;
+  }
+}

@@ -1,0 +1,85 @@
+.safe-container {
+    width: 100%;
+    margin-top: 40px;
+    padding: 60px;
+    background: @white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    .safe-list {
+        width: 500px;
+        li {
+            min-height: 60px;
+            line-height: 60px;
+        }
+        .verify {
+            float: right;
+            padding-right: 25px;
+            color: #19BC9C;
+        }
+        .unverify {
+            float: right;
+            padding-right: 25px;
+            color: #f00;
+        }
+        button {
+            float: right;
+            margin-top: 15px;
+        }
+    }
+}
+.safe-container-modal {
+    .ant-modal-header, .ant-modal-footer {
+        border: none !important;
+    }
+    .ant-modal-footer {
+        padding: 0 0 20px;
+        text-align: center;
+        button:first-child {
+            margin-right: 20px;
+        }
+        button:last-child {
+            color: @white !important;
+            background-color: @theme-color !important;
+            border-color: @theme-color !important;
+            &:hover, &:focus {
+                color: @white !important;
+                background-color: lighten(@theme-color, 5) !important;
+                border-color: lighten(@theme-color, 5) !important;
+            }
+
+            &:active, &.active {
+                color: @white !important;
+                background-color: @theme-color !important;
+                border-color: @theme-color !important;
+            }
+        }
+    }
+    .email-input, .pwd-input, .newpwd-input, .border-input, .verify-input, .new-verify-input, .new-border-input {
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        box-shadow: none !important; 
+    }
+    .pwd-input {
+        margin-bottom: 30px;
+    }
+    .pwd-input, .newpwd-input {
+        width: 75%;
+        margin-right: 5%;
+    }
+    .verify-input, .new-verify-input {
+        width: 61.5%;
+        margin-right: 5%;
+    }
+    .link {
+        color: @primary-color;
+    }
+    .i-geetest, .gt-loading {
+        margin: 30px 0;
+    }
+    .send-verify {
+        float: right;
+        background: rgba(41, 135, 188, 0.1);
+        border: none;
+        color: @primary-color;
+    }
+}

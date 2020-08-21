@@ -1,0 +1,57 @@
+.search-author-content {
+  .author-list-panel {
+    background-color: white;
+
+  }
+
+}
+.search-content {
+  .service-list {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.search-shots-content {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .common-intro {
+    margin: 0 15px 20px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .search-author-content {
+    .author-list-panel {
+      background-color: white;
+  
+    }
+    .author-shots-list .author-shots-item {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .search-shots-content {
+    margin-left: initial;
+    margin-right: initial;
+  }
+  .search-content {
+    .service-list {
+      margin-left: initial;
+      margin-right: initial;
+
+      .service-item {
+        width: calc(100% - 30px);
+      }
+    }
+  }
+}

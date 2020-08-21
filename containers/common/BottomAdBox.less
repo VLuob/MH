@@ -1,0 +1,123 @@
+
+.bottom-ad-box {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 1000;
+  width: 320px;
+  min-height: 230px;
+  border-radius: 4px;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.30);
+  transform: translateY(125%);
+  transition: transform .5s;
+
+  &.show {
+    transform: translateY(0);
+  }
+
+
+  .btn-close {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    z-index: 1;
+    border-radius: 12px;
+    font-size: 14px;
+    text-align: center;
+    color: #888888;
+    background-color: white;
+    cursor: pointer;
+
+    &:hover {
+      color: #333333;
+    }
+  }
+
+}
+.bottom-ad-body {
+  height: 100%;
+}
+
+.bottom-ad-text-box {
+  background-color: white;
+  padding: 15px 25px;
+  height: 100%;
+  border-top: 5px solid @primary-color;
+  border-radius: 4px;
+
+  .ad-text-title {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333333;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .ad-text-content {
+    padding: 12px 0;
+    min-height: 150px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666666;
+    text-align: justify;
+    font-family: @font-Light;
+  }
+  .ad-text-footer {
+    text-align: right;
+    
+    a {
+      font-size: 12px;
+      color: @primary-color;
+    }
+  }
+}
+
+.bottom-ad-img-box {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 100%;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .ad-spreads {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    padding: 2px 6px;
+    background: rgba(0, 0, 0, 0.3);
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: @white;
+    letter-spacing: 0;
+    border-radius: 3px;
+    z-index: 10;
+  }
+
+  .ad-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    font-family: @font-Light;
+    line-height: 1.6;
+    background-image: linear-gradient(-179deg, rgba(0,0,0,0.01) 0%, #000000 140%);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    .ad-title-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+}

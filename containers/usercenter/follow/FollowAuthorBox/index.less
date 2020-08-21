@@ -1,0 +1,26 @@
+.user-author {
+
+  .author-list {
+    padding: 20px 30px;
+  }
+  .author-item-box{
+    padding: 40px 0;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .user-author {
+
+    .author-item-box {
+      .author-info-wrapper {
+        width: 350px;
+      }
+
+      .author-shots-item {
+        &:nth-child(n + 3) {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.member-managerment-container {
+    .title-line {
+        font-family: @font-Regular;
+        font-size: 20px;
+        color: @text-base;
+        letter-spacing: 0;
+        line-height: 48px;
+        border-bottom: 1px solid @border-color-base;
+        a {
+            float: right;
+            font-family: @font-Regular;
+            font-size: 13px;
+            color: @text-base;
+            letter-spacing: 0;
+            transition: all 0.5s;
+            &:hover {
+                color: @primary-color;
+            }
+        }
+    }
+    .member-managerment-content {
+        .member-li {
+            width: 100%;
+            height: 77px;
+            padding: 16px 20px;
+            box-shadow: inset 0 -1px 0 0 @border-color-base;
+            cursor: pointer;
+            &:hover {
+                background: #E5F3FA;
+                .anticon-redo {
+                    display: inline-block;
+                }
+            }
+            .avatar {
+                margin-top: 7px;
+            }
+            .member-info {
+                height: 100%;
+            }
+            .member-role {
+                font-family: @font-Regular;
+                font-size: 14px;
+                color: @text-base;
+            }
+        }
+        .member-tag {
+            width: 74px;
+            height: 30px;
+            line-height: 30px;
+            font-family: @font-Regular;
+            font-size: 14px;
+            text-align: center;
+            letter-spacing: 0;
+        }
+        .member-unconfirm {
+            background: #E6F7E1;
+            color: #4F8B3A;
+        }
+        .member-confirm {
+            background: #F5EAE1;
+            color: #916645;
+        }
+        i {
+            font-size: 14px;
+        }
+        .anticon-redo {
+            float: left;
+            display: none;
+        }
+        .anticon-form {
+            float: right;
+        }
+    }
+    .brief-box {
+        padding: 0;
+    }
+    .brief-meta {
+        padding: 0;
+    }
+}

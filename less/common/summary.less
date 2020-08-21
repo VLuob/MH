@@ -1,0 +1,120 @@
+.summary-module {
+    width: 100%;
+    padding-bottom: 30px;
+    .summary-intro-list {
+        padding: 10px 0;
+    }
+    .swiper-button-next {
+        color: #C7C7CC;
+    }
+    .summary-intro-box {
+        float: left;
+        width: 325px;
+        padding-top: 15px;
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+        .ins-img-box {
+            .avatar-img {
+                border-radius: 50%;
+            }
+        }
+        .content-box {
+            padding-left: 120px;
+            .brief {
+                cursor: pointer;
+            }
+            .ins-group-buttons {
+                margin-top: 20px;
+                a {
+                    color: @text-base;
+                    transition: 0.25s all linear;
+                    &:hover {
+                        color: @primary-color;
+                    }
+                }
+                a:last-child {
+                    margin-left: 15px;
+                }
+            }
+            .title-container {
+                cursor: pointer;
+            }
+        }
+        .imgbox {
+            width: 100px;
+            min-height: 100px;
+        }
+        button {
+            // width: 70px;
+            height: 32px;
+            font-family: @font-Regular;
+            font-size: 12px;
+            letter-spacing: 0;
+            margin: 25px 20px 0 0;
+        }
+        button:last-child {
+            color: @text-base;
+        }
+        a {
+            color: @white;
+        }
+    }
+    .summary-group-box {
+        overflow: hidden;
+        float: right;
+        position: relative;
+        width: 70%;
+        height: 173px;
+        .group-slides {
+            float: left;
+            width: 243px;
+            height: 173px;
+            margin-right: 17px;
+            border-radius: 6px;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+            }
+        }
+        .slides {
+            width: 243px;
+            height: 173px;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+            }
+        }
+    }
+    .summary-img-group {
+        li {
+            float: left;
+            width: 243px;
+            height: 173px;
+            margin-right: 17px;
+            border-radius: 6px;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+            }
+        }
+        .slide {
+            height: 173px;
+        }
+    }
+    .change {
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        font-size: 30px;
+        color: #C7C7CC;
+        transform: translateY(-50%);
+    }
+}

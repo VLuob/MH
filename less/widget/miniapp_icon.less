@@ -1,0 +1,76 @@
+.miniapp-icon {
+    position: relative;
+}
+.miniapp-icon:hover .miniapp-overlay {
+    display: block;
+}
+
+.miniapp-icon .iconfont {
+    color: rgba(80, 161, 56, 0.8);
+    cursor: pointer;
+}
+.miniapp-icon .iconfont:hover {
+    color: rgba(80, 161, 56, 1);
+}
+
+.miniapp-overlay {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 160px;
+    height: 190px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    text-align: center;
+    z-index: 10;
+}
+
+.miniapp-overlay.rightCenter {
+    left: 30px;
+    top: -80px;
+}
+.miniapp-overlay.leftCenter {
+    left: initial;
+    right: 30px;
+    top: -80px;
+}
+.miniapp-overlay.topCenter {
+    left: -70px;
+    top: initial;
+    bottom: 30px;
+}
+.miniapp-overlay.topLeft {
+    left: initial;
+    right: 0;
+    top: initial;
+    bottom: 30px;
+}
+.miniapp-overlay.bottomCenter {
+    left: -70px;
+    top: 30px;
+}
+
+
+.miniapp-overlay .loading {
+    display: block;
+    padding: 50px 0;
+    height: 160px;
+    text-align: center;
+}
+.miniapp-overlay .wxacode {
+    display: block;
+    padding: 10px;
+    height: 160px;
+
+    img {
+        width:100%;
+        height:100%;
+    }
+}
+.miniapp-overlay .text {
+    display: block;
+    color: #999999;
+    font-size: 12px;
+    line-height: 30px;
+}

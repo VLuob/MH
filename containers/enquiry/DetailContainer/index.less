@@ -1,0 +1,180 @@
+.enquiry-detail-section {
+
+  background-color: white;
+}
+
+.enquiry-detail-container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.enquiry-detail-wrapper {
+  position: relative;
+  padding: 40px 0;
+}
+.enquiry-detail-content {
+  font-size: 36px;
+  color: #333333;
+  line-height: 1.4;
+}
+.enquiry-detail-intro {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666666;
+
+  .intro-left {
+    flex: 1;
+
+    span {
+      margin-right: 15px;
+    }
+  }
+}
+.enquiry-detail-bottom {
+  margin-top: 20px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .contact-info {
+    flex: 1;
+
+    .btn-contact {
+      padding-left: 30px;
+      padding-right: 30px;
+      height: 50px;
+      border-radius: 25px;
+      font-size: 20px;
+    }
+
+    .views-text {
+      margin-left: 20px;
+      font-size: 16px;
+      color: #666666;
+    }
+  }
+}
+
+.enquiry-recommend-wrapper {
+  padding: 50px 0;
+
+  .header {
+    padding-bottom: 30px;
+    font-size: 16px;
+    color: #666666;
+  }
+
+  .enquiry-item-price-wrapper {
+    width: 180px;
+  }
+}
+
+
+.enquiry-confirm-modal-wrapper {
+  padding: 10px 15px;
+
+  .title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #222222;
+    line-height: 1;
+  }
+  .content {
+    padding:  10px 0;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+  }
+  .footer {
+    margin-top: 30px;
+    text-align: center;
+
+    .ant-btn {
+      margin: 0 15px;
+      min-width: 108px;
+      height: 38px;
+      
+    }
+  }
+
+  .alert-warning {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #E9990F;
+    text-align: left;
+    line-height: 1;
+    background-color: #FFFCE1;
+  }
+  .contact-list {
+    text-align: left;
+
+    li {
+      margin-bottom: 15px;
+      font-size: 14px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .label {
+        margin-right: 5px;
+        color: #999999;
+      }
+      .value {
+        color: #333333;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+  .enquiry-detail-wrapper {
+    padding: 20px 15px;
+  }
+
+  .enquiry-detail-content {
+    font-size: 20px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 34px;
+  }
+  .enquiry-detail-intro {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #666666;
+    .intro-left {
+      display: flex;
+      justify-content: space-between;
+
+      .date-publish {
+        flex: 1;
+        text-align: center;
+      }
+
+      .views {
+        margin-right: 0;
+      }
+    }
+
+    .intro-right {
+      display: none;
+    }
+  }
+  
+  .enquiry-detail-bottom {
+    display: none;
+
+  }
+  
+  .enquiry-recommend-wrapper {
+    padding: 20px 0;
+
+    .header {
+      padding: 0 15px 20px;
+    }
+  }
+}

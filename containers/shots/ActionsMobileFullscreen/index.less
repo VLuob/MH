@@ -1,0 +1,40 @@
+.mb-gallery-fullscreen-actions {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  z-index: 2;
+
+  .action-item {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    line-height: 1;
+
+    a.btn-comment {
+      color: white;
+    }
+
+    .icon {
+      font-size: 15px;
+    }
+
+    .count {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+
+    .action-btn {
+
+      &.active {
+      
+        &.favor {
+          color: #FF0050;
+        }
+        
+        &.collection {
+          color: @primary-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.tag-container {
+    .ant-tag {
+        position: relative;
+        padding: 0 20px 0 10px;
+        line-height: 32px;
+        font-family: @font-Regular;
+        font-size: 13px;
+        color: @text-base;
+        letter-spacing: 0;
+        border-radius: 50px;
+        &:hover {
+            i {
+                display: inline-block;
+                position: absolute;
+                top: 10px;
+                right: 5px;
+            }
+        }
+        i {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 5px;
+            color: @text-base;
+            &:hover {
+                display: inline-block;
+                color: @primary-color;
+            }
+        }
+    }
+}

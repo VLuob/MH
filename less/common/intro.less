@@ -1,0 +1,170 @@
+.intro-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+    .imgbox {
+        position: absolute;
+        top: 50%;
+        width: 80px;
+        min-height: 80px;
+        transform: translateY(-50%);
+    }
+    .intro-role {
+        position: absolute;
+        left: 20px;
+        bottom: -45px;
+        display: inline-block;
+        width: 60px;
+        height: 22px;
+        line-height: 22px;
+        background: #8C24CD;
+        border-radius: 3px;
+        font-family: @font-Regular;
+        font-size: 12px;
+        text-align: center;
+        color: @white;
+        letter-spacing: 0;
+    }
+    .ins-img-box {
+        position: absolute;
+        top: 0;
+        transform: translateY(0);
+    }
+    .ins-status {
+        position: absolute;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        transform: translate(0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: @font-Medium;
+            font-size: 14px;
+            text-align: center;
+        }
+        .ins-pass-reject {
+            color: #FF1313;
+        }
+        .ins-pass-audited {
+            color: #FF7400;
+        }
+    }
+    .title-box, .area, .brief {
+        display: block;
+        width: 100%;
+    }
+    .title-box {
+        padding-top: 6px;
+    }
+    .title-status {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 3px;
+        color: #f00;
+    }
+    .content-box {
+        padding-left: 92px;
+        vertical-align: middle;
+        a {
+            transition: all 0.5s linear;
+            &:hover {
+                color: @primary-color;
+            }
+        }
+    }
+    strong {
+        font-family: @font-Medium;
+        font-size: 14px;
+        color: @text-base;
+        line-height: 20px;
+    }
+    .institution {
+        display: inline-block;
+        width: auto;
+        margin: 4px 8% 0 0;
+        padding: 0 5px;
+        background: @theme-color;
+        vertical-align: top;
+        color: @white;
+        border-radius: 3px;
+    }
+    .intro-img {
+        position: relative;
+        display: inline-block;
+        top: 50%;
+        width: 80px;
+        height: 80px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+    .title {
+        display: inline-block;
+        max-width: 95%;
+        padding-right: 7%;
+        font-family: @font-Medium;
+        font-size: 15px;
+        font-weight: 550;
+        color: @text-base;
+        letter-spacing: 0;
+        line-height: 28px;
+        transition: all 0.2s linear;
+        &:hover {
+            color: @primary-color;
+        }
+    }
+    .area {
+        height: 28px;
+        font-family: @font-Regular;
+        font-size: 12px;
+        color: @text-assistant;
+        letter-spacing: 0;
+        line-height: 28px;
+    }
+    .brief {
+        margin: 12px 0 18px;
+        font-family: @font-Regular;
+        font-size: 14px;
+        letter-spacing: 0;
+        font-size: 14px;
+        color: @text-explain;
+        line-height: 20px;
+    }
+    .operation-box {
+        .operation-name {
+            display: inline-block;
+            width: 90px;
+            height: 32px;
+            line-height: 32px;
+            border-radius: 3px;
+            background: #E5F3FA;
+            font-family: @font-Regular;
+            font-size: 12px;
+            text-align: center;
+            color: @primary-color;
+            letter-spacing: 0;
+            cursor: pointer;
+        }
+        .operation-publish {
+            width: 72px;
+            height: 32px;
+            margin: 0 0 0 20px;
+            line-height: 32px;
+            background: @primary-color;
+            font-family: @font-Medium;
+            border-radius: 3px;
+            letter-spacing: 0;
+            font-size: 12px;
+            text-align: center;
+            color: @white !important;
+        }
+    }
+    .user-identity {
+        margin-right: 10px;
+    }
+}

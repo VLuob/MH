@@ -1,0 +1,275 @@
+.shots-detail-body {
+  background-color: white;
+}
+.shots-detail-contanier.shots-detail-layout {
+  margin: 0 auto;
+  display: flex;
+
+  &.herizontal {
+    width: initial;
+
+    .shots-detail-main {
+      width: 100%;
+    }
+  }
+
+  &, .shots-content-info-wrapper {
+    width: 1298px;
+  }
+  .shots-detail-main, .shots-main-container {
+    width: 1000px;
+  }
+  .shots-content-main {
+    position: relative;
+  }
+  .shots-detail-side {
+    margin-left: 40px;
+    width: 258px
+    
+  }
+
+  .related-recommend-wrapper {
+
+    .related-compositions {
+      background-color: white;
+    }
+
+    .related-container {
+      width: initial;
+
+      .header .title {
+        font-size: 18px;
+        color: #333333;
+      }
+    }
+  }
+
+  header {
+    background-color: transparent;
+  }
+  .header-container {
+    width: initial;
+  }
+  .shots-gallery-container {
+    margin-top: 0;
+    padding-bottom: 0;
+    width: initial;
+    
+  }
+
+  .title-group {
+    .info {
+      font-size: 14px;
+    }
+    .info {
+      a {
+        color: #888888;
+        &:hover {
+          color: @primary-color;
+        }
+      }
+    }
+    .summary {
+      color: #333333;
+    }
+  }
+  .shots-gallery-content {
+    // width: 1000px;
+  }
+  .shots-gallery-side {
+    position: relative;
+    margin-left: 40px;
+    width: 258px;
+
+    .related-recommend-wrapper {
+      position: absolute;
+
+      .related-compositions {
+        background-color: white;
+      }
+
+      .related-container {
+        width: initial;
+      }
+    }
+  }
+  
+  .shots-actions-bar-container {
+    margin: 0 auto;
+    padding: 15px 0;
+    max-width: 1100px;
+  }
+  
+  .shots-info-container {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 1100px;
+    display: block;
+
+    .title-group {
+      .title {
+        font-size: 36px;
+        font-weight: bold;
+      }
+    }
+
+  }
+  .shots-info-sider {
+    border-left: none;
+  }
+
+  .shots-content-info-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .shots-content-side {
+      position: relative;
+      margin-left: 40px;
+      width: 258px;
+    }
+  }
+
+  .favors-container {
+    padding: 40px 0;
+
+    .favor-icon {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 24px;
+    }
+    .favor-text {
+      font-size: 14px;
+    }
+  }
+
+  .shots-info-list {
+    padding: 30px 0 10px;
+    border-top: 1px solid #EEEEEE;
+  }
+
+
+
+  .shots-comment {
+    border-top: 1px solid #EEEEEE;
+    background-color: transparent;
+
+  }
+
+  .comment-container {
+    width: initial;
+
+    .comment-box {
+      margin-top: 0;
+    }
+  }
+  
+}
+
+
+
+.shots-detail-contanier.shots-detail-mobile {
+  
+  .related-recommend-wrapper {
+    padding: 10px 20px;
+  }
+
+  .shots-comment {
+    background-color: white;
+
+  }
+  .comment-header {
+    font-size: 16px;
+  }
+
+  .comment-main {
+    margin-top: 20px;
+
+    .header {
+      .sort-tabs {
+        li {
+          margin-left: 0;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .composition-type-list {
+    padding: 0 15px;
+  }
+
+  .related-favorites {
+    width: 100%;
+
+    .related-container {
+      width: 100%;
+      padding: 0 15px;
+
+    }
+  }
+}
+
+.shots-actions-bar-fixed {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  z-index: 1;
+  padding: 15px 20px;
+  background-color: white;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.10);
+
+  &.show {
+    display: block;
+  }
+
+  .shots-title {
+    font-size: 16px;
+    color: #333333;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .shots-detail-contanier.shots-detail-layout {
+    
+    &, .shots-content-info-wrapper {
+      width: 1198px;
+    }
+    .shots-detail-main, .shots-main-container {
+      width: 900px;
+    }
+  }
+}
+@media screen and (max-width: 1240px) {
+  .shots-detail-contanier.shots-detail-layout {
+    &, .shots-content-info-wrapper {
+      width: 1098px;
+    }
+    .shots-detail-main, .shots-main-container {
+      width: 800px;
+    }
+  }
+}
+@media screen and (max-width: 1140px) {
+  .shots-detail-contanier.shots-detail-layout {
+
+    &, .shots-content-info-wrapper {
+      width: 998px;
+    }
+    .shots-detail-main, .shots-main-container {
+      width: 700px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .shots-detail-contanier.shots-detail-layout {
+
+    &, .shots-content-info-wrapper {
+      width: 898px;
+    }
+    .shots-detail-main, .shots-main-container {
+      width: 600px;
+    }
+  }
+}

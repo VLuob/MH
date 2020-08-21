@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.1 (81669) - https://sketch.com -->
+    <title>家具</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00-作品修改" transform="translate(-201.000000, -2262.000000)">
+            <g id="编组-7" transform="translate(171.000000, 2151.000000)">
+                <g id="家具" transform="translate(30.000000, 111.000000)">
+                    <g id="编组-6">
+                        <rect id="矩形" x="0" y="0" width="20" height="20"></rect>
+                        <path d="M9.41935484,8.09600171 L9.41935484,4.58064516 C9.41935484,4.25996369 9.67931853,4 10,4 C10.3206815,4 10.5806452,4.25996369 10.5806452,4.58064516 L10.5806452,8.09600171 C13.6219101,8.39299737 16,10.9988211 16,14.1694915 L4,14.1694915 C4,10.9988211 6.37808991,8.39299737 9.41935484,8.09600171 Z M8.64516129,14.5762712 L11.3548387,14.5762712 C11.3548387,15.3625749 10.7482568,16 10,16 C9.25174324,16 8.64516129,15.3625749 8.64516129,14.5762712 Z" id="形状结合" fill="#008AD9"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

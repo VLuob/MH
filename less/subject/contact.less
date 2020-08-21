@@ -1,0 +1,135 @@
+.contact-layout {
+    max-width: 1920px;
+    margin: 0 auto;
+    .banner-content {
+        width: 100%;
+    }
+    .contact-content {
+        max-width: 1127px;
+        margin: 50px auto;
+        .contact-side {
+            float: left;
+            width: 200px;
+            height: 62px;
+            line-height: 62px;
+            margin-right: 40px;
+            text-align: center;
+            border-top: 1px solid @border-color-base;
+            li {
+                border-bottom: 1px solid @border-color-base;
+                cursor: pointer;
+            }
+            .contact-side-sel {
+                color: @primary-color;
+            }
+        }
+        .contact-sub-content {
+            width: 887px;
+            margin-left: 240px;
+            background: @white;
+        }
+        .aboutus-content {
+            padding: 50px 70px;
+            background: @white;
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
+            border-radius: 3px;
+        }
+        .contactus-content {
+            padding-bottom: 50px;
+            background: @white;
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
+            border-radius: 3px;
+            .aboutus-sub-content {
+                padding: 50px 70px 0;
+            }
+            .contact-hotline-list {
+                width: 100%;
+                li {
+                    float: left;
+                    width: 50%;
+                    padding-bottom: 32px;
+                    word-break: break-all;
+                    font-family: @font-Medium;
+                    font-size: 14px;
+                    color: @text-base;
+                    letter-spacing: 0;
+                    text-align: justify;
+                }
+                .short-li {
+                    padding-bottom: 0;
+                }
+            }
+            .other-contact {
+                border-bottom: none !important;
+                .other-contact-li {
+                    width: 100% !important;
+                }
+            }
+            .contact-qrcode-group {
+                display: flex;
+                padding-bottom: 30px;
+            }
+            .contact-qrcode-box {
+                margin-right: 50px;
+                width: 115px;
+                // height: 115px;
+                .img-name {
+                    display: block;
+                    width: 100%;
+                    margin: 0 auto;
+                    font-family: @font-Regular;
+                    font-size: 12px;
+                    text-align: center;
+                    color: @text-assistant;
+                    letter-spacing: 0;
+                }
+
+                .padding {
+                    padding: 6px;
+                }
+            }
+            .contact-map-box {
+                width: 100%;
+                height: 100%;
+            }
+            .contact-voice-box {
+
+                .desc {
+                    margin-top: 20px;
+                }
+            }
+        }
+        .contact-content-list {
+            padding: 0 70px;
+            .contact-hotline-list {
+                border-bottom: 1px solid #D8D8D8;
+            }
+        }
+        .contact-title {
+            padding-bottom: 50px;
+            font-family: @font-Medium;
+            font-size: 20px;
+            color: @text-base;
+            letter-spacing: 0;
+        }
+        .contact-sub-title {
+            padding: 40px 0;
+            font-family: @font-Medium;
+            font-size: 18px;
+            color: @text-base;
+            letter-spacing: 0;
+            text-align: justify;
+        }
+        .contact-text-content {
+            p {
+                padding-bottom: 30px;
+                font-family: @font-Regular;
+                font-size: 14px;
+                color: @text-base;
+                letter-spacing: 0;
+                text-align: justify;
+                line-height: 26px;
+            }
+        }
+    }
+}

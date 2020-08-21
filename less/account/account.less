@@ -1,0 +1,264 @@
+.account-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: @white;
+    .account-bg {
+        float: left;
+        height: 100%;
+        // width: 35.42%;
+        // height: 100vh;
+        // background: url('https://resource.meihua.info/login_left_banner.png') center right no-repeat;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .account-content {
+        overflow: auto;
+        // float: left;
+        position: relative;
+        // margin-left: 35.42%;
+        min-height: 100vh;
+    }
+    .imgbox {
+        width: 100%;
+        height: 100%;
+    }
+    .account-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px; 
+        text-align: center; 
+        transform: translate(-50%, -50%);
+    }
+    .tit-logo {
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    .title {
+        padding-bottom: 40px;
+        font-family: @font-Regular;
+        font-size: 24px;
+        color: @primary-color;
+        letter-spacing: 0;
+    }
+    input {
+        border-radius: 0;
+    } 
+    .ant-form-explain {
+        text-align: left;
+        line-height: 32px;
+        padding-top: 5px;
+    }
+    .ant-btn-primary {
+        width: 100%;
+        font-family: @font-Regular;
+        font-size: 16px;
+        color: @white;
+        letter-spacing: 0;
+        border-radius: 0;
+    }
+    .description {
+        font-family: @font-Regular;
+        font-size: 16px;
+        color: @text-assistant;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+    .direct {
+        display: inline-block;
+        padding-top: 16px;
+        font-family: @font-Regular;
+        font-size: 16px;
+        color: @primary-color;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+    .remind-pwd, .forget-pwd {
+        font-family: @font-Regular;
+        font-size: 14px;
+        line-height: 14px;
+        color: @text-assistant;
+        letter-spacing: 0;
+    }
+    .remind-pwd {
+        float: left;
+    }
+    .forget-pwd {
+        float: right;
+        cursor: pointer;
+    }
+    .other-login-way {
+        padding-top: 40px;
+    }
+    .headline {
+        font-weight: normal;
+        font-family: @font-Regular;
+        font-size: 24px;
+        color: @text-assistant;
+        letter-spacing: 0;
+    }
+    .forget-btn {
+        margin-top: 40px;
+    }
+    .geetest-box {
+        min-height: 45px;
+    }
+    .forgot-box, .other-box {
+        padding-top: 40px;
+        .value-meta {
+            font-family: @font-Regular;
+            font-size: 16px;
+            color: @warning-color;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 26px;
+        }
+        .description {
+            padding-top: 45px;
+            font-size: 14px;
+            .send-email {
+                cursor: pointer;
+                font-family: @font-Regular;
+                font-size: 14px;
+                color: @text-base;
+                letter-spacing: 0;
+                line-height: 20px;
+            }
+        }
+    }
+    .veri-field {
+        display: flex;
+        border: 1px solid @border-color-base;
+        input {
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+        .send-verify-box {
+            position: absolute;
+            top: 5px;
+            right: 3%;
+            width: 40%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            button {
+                width: 100%;
+                border: none;
+                outline: none;
+                box-shadow: none;
+                padding: 0 3px;
+                background: #F1F1F1;
+                border-radius: 0;
+            }
+            .send-verify {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                &:hover {
+                    background: @theme-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+
+    .sign-top-intro {
+        margin-bottom: 20px;
+        color: @text-assistant;
+    }
+
+    .sign-bottom-intro {
+        font-size: 16px;
+        color: @text-assistant;
+    }
+
+    .oauth-tips-container {
+        text-align: center;
+
+        .icon {
+            font-size: 42px;
+        }
+        .title {
+            margin-top: 30px;
+            font-size: 24px;
+            color: @text-base;
+        }
+        &.error .icon {
+            color: @error-color;
+        }
+        &.success .icon {
+            color: @success-color;
+        }
+    }
+}
+
+.sign-left-container {
+    float: left;
+    width: 695px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.sign-shots-wrapper {
+    padding: 0 15px;
+    height: calc(100vh - 128px);
+    overflow-y: auto;
+    background-color: #f9f9f9;
+
+    .sign-shots-list {
+        padding-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .common-intro {
+        width: 187px;
+    }
+    .common-inner-intro {
+        min-height: initial;
+
+        .imgbox {
+            min-height: initial;
+        }
+    }
+}
+.sign-ad-wrapper {
+    flex-grow: 1;
+    height: 128px;
+    background-color: #333333;
+    text-align: center;
+
+    .intro {
+        margin-top: 30px;
+        color: #999;
+    }
+    .desc {
+        margin-top: 15px;
+        font-size: 18px;
+        color: white;
+
+        & > span {
+            padding: 15px;
+
+            & > i {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .account-container {
+        overflow: initial;
+        height: initial;
+
+        .tit-logo {
+            margin-bottom: 40px;
+        }
+    }
+}

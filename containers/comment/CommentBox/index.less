@@ -1,0 +1,288 @@
+.comment-form {
+  .comment-input {
+    position: relative;
+
+    .length-tips {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      color: @text-assistant;
+
+      &.error {
+        color: @error-color;
+      }
+    }
+
+    .login-info-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #efefef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #dfdfdf;
+      border-radius: 3px;
+      color: @text-assistant;
+
+      a {
+        margin: 0 10px;
+        color: @primary-color;
+      }
+    }
+  }
+    textarea {
+      resize: none;
+      height: 90px;
+    }
+
+  .footer {
+    margin-top: 15px;
+    text-align: right;
+
+    .intro-label {
+      margin-right: 20px;
+      color: @text-assistant;
+
+      a {
+        color: @primary-color;
+      }
+    }
+
+    .ant-btn {
+      height: 38px;
+    }
+  }
+}
+
+.comment-empty {
+  position: relative;
+  margin: 30px 0;
+  text-align: center;
+  line-height: 38px;
+  color: @text-assistant;
+
+  .text {
+    position: relative;
+    z-index: 1;
+    padding: 5px 30px;
+    background-color: #f9f9f9;
+  }
+
+  .line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 1px solid @text-lighter;
+    width: 65%;
+  }
+}
+
+.comment-box {
+  margin-top: 30px;
+}
+.comment-header {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 20px;
+
+  .signout-tip-text {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 22px;
+  }
+}
+.comment-main {
+  margin-top: 50px;
+
+  .header {
+    color: @text-assistant;
+    // .clearfix();
+    overflow: hidden;
+
+    .sort-tabs {
+      // float: right;
+      font-size: 13px;
+
+      li {
+        float: left;
+        margin-left: 10px;
+        cursor: pointer;
+
+        &.active {
+          color: @text-base;
+        }
+      }
+    }
+
+  }
+
+}
+
+.comment-list-wrapper {
+  position: relative;
+
+  .load-spining {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 50px;
+    // background-color: rgba(255,255,255,.5);
+  }
+}
+
+.comment-list {
+  margin-top: 20px;
+}
+
+.comment-item {
+  padding: 10px 0;
+  margin-bottom: 20px;
+  
+  .comment-avatar {
+    float: left;
+    width:50px;
+  }
+
+  & > .comment-content-wrapper {
+    margin-left: 70px;
+  }
+
+  .comment-content {
+    font-size: 13px;
+  }
+
+  .comment-info-wrap {
+    min-height: 20px;
+    // .clearfix();
+  }
+
+
+  .author-info  {
+    .nick {
+      color: @text-base;
+    }
+
+    .reply-author-nick, .dot, .time {
+      color: @text-assistant;
+    }
+
+    .reply-author-nick {
+      margin-left: 5px;
+    }
+
+    .dot {
+      margin: 0 5px;
+    }
+
+    .auditing {
+      margin-left: 15px;
+      font-size: 13px;
+      color: #FFAA17;
+    }
+  }
+
+  .comment-actions {
+    float: right;
+    color: @text-assistant;
+
+    .action {
+      margin-right: 20px;
+      cursor: pointer;
+
+      &:hover {
+        color: @text-base;
+      }
+
+      &.favor {
+        margin-right: 10px;
+
+        &.active, &:hover {
+          color: #FF0050;
+        }
+      }
+    }
+  }
+
+  .comment-message {
+    margin: 10px 0;
+    color: @text-assistant;
+    line-height: 1.75;
+  }
+
+  .comment-form {
+    margin-top: 20px;
+  }
+
+
+}
+
+.comment-reply-box {
+  position: relative;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: @text-lightest;
+  border-radius: 3px;
+
+  &::before {
+    position: absolute;
+    top: -15px;
+    display: block;
+    content: ' ';
+    width:0; 
+    height:0; 
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    border-bottom:15px solid @text-lightest;
+
+  }
+
+  .comment-content {
+    &:nth-child(n + 1) {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comment-box {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .load-more-box {
+      margin-top: 30px;
+    }
+  }
+
+  .comment-item {
+    
+    .comment-avatar {
+      width: 20px;
+
+      .ant-avatar {
+        width: 20px !important;
+        height: 20px !important;
+        line-height: 20px !important;
+        font-size: 13px !important;
+      }
+    }
+
+    .comment-content-wrapper {
+      margin-left: initial;
+
+      & > .comment-content > .comment-info-wrap {
+        margin-left: 30px;
+      }
+    }
+
+    
+  }
+}

@@ -1,0 +1,101 @@
+.author-popup {
+  display: none;
+  position: absolute;
+  left: -5px;
+  bottom: 60px;
+  z-index: 100;
+
+  &.show {
+    display: block;
+  }
+}
+
+.author-popup-box {
+  padding: 30px;
+  width: 212px;
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
+
+  &::after {
+    display: block;
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-top: 10px solid white;
+    bottom: -10px;
+    left: 10px;
+  }
+
+  .author-name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.7;
+  }
+
+  .author-type {
+    margin-top: 10px;
+
+    .user-identity {
+      float: initial;
+    }
+  }
+
+  .author-area {
+    margin-top: 10px;
+    color: @text-assistant;
+    font-size: 12px;
+  }
+
+  .author-composition {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .count-item {
+      padding: 0 20px;
+      font-size: 12px;
+      .name {
+        color: @text-assistant;
+      }
+      .count {
+        margin-top: 8px;
+      }
+    }
+
+    .composition-name {
+      color: @text-assistant;
+    }
+    .composition-count {
+      margin-top: 8px;
+
+    }
+  }
+
+  .btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .ant-btn {
+      width: 70px;
+      font-size: 12px;
+    }
+
+    .btn-follow.followed {
+      border: none;
+      background-color: #F1F1F1;
+      color: rgba(0, 0, 0, 0.65);
+    }
+
+    .btn-enquiry {
+      margin-left: 10px;
+    }
+  }
+}
+

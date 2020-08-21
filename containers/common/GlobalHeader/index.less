@@ -1,0 +1,172 @@
+.pc-global-header {
+  padding: 0 30px;
+  height: 70px;
+  background-color: #191919;
+
+  .header-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    height: 100%;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+    width: 325px;
+
+    .nav-item {
+      margin-right: 30px;
+      font-size: 14px;
+      height: 100%;
+      line-height: 40px;
+
+      a {
+        display: block;
+        padding: 15px 0;
+        height: 100%;
+        color: #A4A4A4;
+  
+        &:hover {
+          color: white;
+        }
+
+        .iconfont {
+          margin-right: 8px;
+        }
+      }
+
+      &.header-logo {
+        margin-right: 40px;
+        img {
+          height: 38px;
+        }
+      }
+    }
+  }
+
+  .header-search-wrapper {
+    flex: 1;
+
+    .header-search {
+      margin: 0 auto;
+      padding: 15px 0;
+      max-width: 874px;
+      
+      .search-wrapper {
+        line-height: 0;
+      }
+      .header-search-box {
+        margin: 0;
+        float: initial;
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .header-quick-menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 260px;
+
+    .menu-item {
+      display: block;
+      margin-left: 25px;
+      height: 100%;
+      font-size: 14px;
+      line-height: 14px;
+
+      .menu-btn {
+        display: block;
+        padding: 15px 0;
+        height: 100%;
+        text-align: center;
+        cursor: pointer;
+        color: #A4A4A4;
+        line-height: 1;
+
+        &:hover {
+          color: white;
+        }
+
+        &.pricing {
+          color: #E7B964;
+        }
+        &.publish {
+          color: white;
+        }
+
+        a {
+          color: #A4A4A4;
+
+          &:hover {
+            color: white;
+          }
+        }
+
+        .icon {
+          font-size: 16px;
+          
+          &.publish .iconfont{
+            font-size: 15px;
+          }
+        }
+        .name {
+          margin-top: 7px;
+        }
+
+        &.user {
+          position: relative;
+          top: -2px;
+        }
+      }
+
+      // 微标数
+      .ant-badge-count {
+        top: -3px;
+        right: -3px;
+      }
+      
+    }
+  }
+
+  .header-search-box {
+
+    .ant-input-prefix {
+      left: 20px;
+
+      .iconfont {
+        font-size: 14px;
+      }
+    }
+    .ant-input-suffix {
+      right: 20px;
+    }
+
+    .ant-input {
+      padding-left: 45px;
+    }
+  }
+  
+
+  .search-input-suffix {
+    font-size: 14px;
+    color: #999999;
+
+    &:hover {
+      color: @primary-color;
+
+      .iconfont {
+        color: @primary-color;
+      }
+    }
+
+    .iconfont {
+      margin-right: 10px;
+    }
+  }
+}

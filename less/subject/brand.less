@@ -1,0 +1,397 @@
+.brand-layout {
+    .nav-container {
+        background: @white;
+    }
+    .banner-container {
+        border-bottom: 1px solid #E1E1E1;
+    }
+    .brand-container {
+        padding-bottom: 50px;
+    }
+    .nav-no-banner {
+        width: 1311px;
+        height: 160px;
+        margin: 0 auto;
+        background: @white;
+        .nav-title {
+            padding-top: 60px;
+        }
+        .nav-title-name {
+            padding-right: 40px;
+            font-family: @font-Medium;
+            font-size: 30px;
+            color: @text-subheading;
+            letter-spacing: 0;
+            text-align: justify;
+        }
+        button {
+            font-family: @font-Regular;
+            vertical-align: top;
+            letter-spacing: 0;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        .nav-title-unfocus {
+            width: 75px;
+            height: 30px;
+        }
+    }
+    .nav-banner {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        .intro-show-img {
+            height: auto;
+            // min-height: 180px;
+            border-radius: 0;
+        }
+        .nav-title {
+            position: absolute;
+            // top: 72%;
+            left: 15.5%;
+            bottom: 12.5%;
+        }
+        .nav-title-name {
+            font-family: @font-Medium;
+            padding-right: 40px;
+            font-size: 30px;
+            color: @white;
+            letter-spacing: 0;
+            text-align: justify;
+        }
+        button {
+            font-family: @font-Regular;
+            vertical-align: top;
+            letter-spacing: 0;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        .nav-title-unfocus {
+            width: 75px;
+            height: 30px;
+        }
+    }
+    .ant-menu-item {
+        padding: 0 40px 0 0 !important;
+        line-height: 61px;
+    }
+    .dressing-sub-title {
+        width: 1311px;
+        margin: 20px auto;
+        background: transparent;
+        ul {
+            height: 60px !important;
+            line-height: 60px !important;
+            padding: 0 !important;
+            background: transparent;    
+            span {
+                font-family: @font-Regular;
+                font-size: 15px;
+                letter-spacing: 0;
+                transition: 0.2s all linear;
+                &:hover {
+                    color: @primary-color;
+                }
+            }
+        }
+        .recommended-btn {
+            line-height: 60px !important;
+            font-family: @font-Regular;
+            font-size: 15px;
+            letter-spacing: 0;
+            transition: 0.2s all linear;
+            &:hover {
+                color: @primary-color;
+            }
+        }
+    }
+    .brand-content {
+        position: relative;
+        width: 1311px;
+        margin: 0 auto;
+    }
+    .loading-more-box {
+        margin: 20px auto;
+        background: transparent;
+    }
+    .ant-tabs-bar {
+        width: 100%;
+        margin: 0;
+        background: @white;
+    }
+    .ant-tabs-nav-container {
+        width: 1311px;
+        margin: 0 auto;
+    }
+    .ant-tabs-tab {
+        padding-left: 0px !important;
+        font-family: @font-Regular;
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+    .ant-tabs-nav-wrap {
+        line-height: 47px !important;
+        border-bottom: 1px solid #fff;
+    }
+    .ant-tabs-nav-scroll {
+        border-bottom: 1px solid #fff;
+    }
+    .ant-menu-submenu-title {
+        padding: 0;
+    }
+    .user-tabs {
+        
+    }
+    .part-loading-wrap {
+        min-height: 500px;
+    }
+    .share-container {
+        top: 50px;
+        right: -50px;
+        .actions {
+            display: none;
+        }
+    }
+    .article-list {
+        margin-top: 0;
+        padding: 50px 258px;
+        background: @white;
+        .article-item {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 800px;
+        }
+    }
+}
+.articlassify-layout {
+    .share-container {
+        top: -30px;
+        right: -80px;
+    }
+}
+
+
+.brand-layout {
+    .nav-no-banner, .ant-tabs-nav-container {
+        width: 1311px;
+    }
+
+    &.has-owner {
+        .nav-no-banner, .ant-tabs-nav-container {
+            width: 1700px;
+        }
+
+        .brand-box {
+            width: 1700px;
+        }
+    }
+}
+
+.brand-box {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1311px;
+
+    .dressing-sub-title {
+        width: initial !important;
+    }
+
+    .brand-content {
+        width: initial !important;
+    }
+
+    
+}
+
+.brand-box-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-main {
+    flex: 1;
+}
+
+.brand-side {
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 340px;
+    height: 100%;    
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+
+    .user-brief-box {
+        padding: 30px;
+    }
+
+    .sider-box {
+        margin: 0;
+        padding: 30px;
+    }
+
+    .side-shots-list {
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            h4 {
+                margin-top: 10px;
+                font-size: 14px;
+                line-height: 1.75;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1820px) {
+    .brand-layout {
+        &.has-owner {
+            .nav-no-banner, .ant-tabs-nav-container {
+                width: 1424px;
+            }
+            .brand-box {
+                width: 1424px;
+            }
+        }
+    }
+}
+
+// @media screen and (max-width: 1750px) {
+//     .brand-layout {
+//         .nav-no-banner, .ant-tabs-nav-container {
+//             width: 1320px;
+//         }
+//         .brand-box {
+//             width: 1320px;
+//         }
+//     }
+// }
+
+@media screen and (max-width: 1550px) {
+    .brand-layout {
+        &.has-owner {
+            .nav-no-banner, .ant-tabs-nav-container {
+                width: 1158px;
+            }
+            .brand-box {
+                width: 1158px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .brand-layout {
+        .nav-no-banner, .ant-tabs-nav-container {
+            width: 1044px;
+        }
+        .brand-box {
+            width: 1044px;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .brand-layout {
+        &.has-owner {
+            .nav-no-banner, .ant-tabs-nav-container {
+                width: 890px;
+            }
+            .brand-box {
+                width: 890px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1145px) {
+    .brand-layout {
+        .nav-no-banner, .ant-tabs-nav-container {
+            width: 780px;
+        }
+        .brand-box {
+            width: 780px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .brand-layout {
+        .brand-box {
+            width: initial;
+        }
+
+        &.has-owner {
+            .brand-side {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .brand-layout {
+
+        .nav-no-banner {
+            padding: 20px 0;
+            height: initial;
+
+            .nav-title {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 18px;
+                font-size: 20px;
+                color: #333333;
+
+                .nav-title-name {
+                    font-size: 20px;
+                }
+
+                button {
+                    padding: 0px;
+                    margin-top: 0;
+                    font-size: 12px;
+                    width: 60px;
+                    height: 22px;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        .ant-tabs-bar {
+            padding: 0;
+
+            .ant-tabs-nav-wrap {
+                width: 100vw;
+
+                .ant-tabs-nav {
+                    display: block;
+                    text-align: center;
+
+                    .ant-tabs-tab {
+                        padding: 5px 20px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .brand-box-mb {
+
+            .article-list {
+                padding: 30px 15px !important;
+            }
+
+            .brand-content  {
+                padding: 30px 0;
+
+                .ant-row-flex {
+                    padding: 0 15px;
+                }
+            }
+        }
+        
+    }
+}

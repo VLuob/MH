@@ -1,0 +1,254 @@
+.tag-list-container {
+    width     : 100%;
+    min-height: 750px;
+
+    .head-tab-content {
+        width           : 100%;
+        // min-height          : 240px;
+        background-color: @white;
+
+        .head-title-box {
+            width      : 1310px;
+            // height     : 160px;
+            // line-height: 160px;
+            margin     : 0 auto;
+            padding: 60px 0  30px;
+
+            .head-title {
+                display    : flex;
+                align-items: center;
+
+                span {
+                    font-family: PingFangSC-Medium;
+                    font-size  : 40px;
+                    color      : #666;
+                }
+
+                button {
+                    height       : 30px;
+                    line-height  : 30px;
+                    width        : 74px;
+                    border-radius: 30px;
+                    margin-left  : 40px;
+                    border       : 0;
+                    outline      : none;
+                }
+            }
+        }
+
+        hr {
+            margin          : 0;
+            height          : 1px;
+            border          : 0;
+            background-color: #e1e1e1;
+        }
+
+        .head-tab-box {
+            width      : 1310px;
+            height     : 80px;
+            margin     : 0 auto;
+            display    : flex;
+            align-items: center;
+
+            .ant-tabs-bar {
+                border: 0;
+                margin: 0;
+
+                .ant-tabs-tab {
+                    padding-left: 0;
+                    margin-right: 70px;
+                    font-size   : 20px;
+                    font-family : PingFangSC-Medium;
+                }
+            }
+        }
+    }
+
+    .tag-banner {
+        .intro-show-img {
+            display: none;
+        }
+
+        &.has-banner {
+            position: relative;
+    
+            .intro-show-img {
+                display: block;
+                height: initial;
+                min-height: 110px;
+            }
+    
+            .tag-title-wrapper {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0, rgba(0, 0, 0, 0.65) 100%);
+            }
+    
+             
+            .head-title span {
+                color: white;
+            }
+            
+        }
+
+        &.has-link {
+            cursor: pointer;
+        }
+    }
+    
+
+    .sub-tab-content {
+        width      : 100%;
+        height     : 100px;
+        display    : flex;
+        align-items: center;
+
+        .sub-tab-box {
+            width       : 1310px;
+            margin      : 0 auto;
+            position    : relative;
+
+            .dressing-sub-title {
+                background-color: transparent;
+            }
+
+            ul {
+                padding-left    : 0 !important;
+                background-color: transparent;
+                .ant-menu-item {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+
+    .production-content {
+        width  : 1310px;
+        margin : 0 auto;
+        padding: 0px 0 30px;
+    }
+
+    .article-list {
+        width  : 1310px;
+        margin : 0 auto 80px auto;
+        padding: 30px;
+
+        &.nobg {
+            background-color: transparent;
+            box-shadow      : none !important;
+        }
+
+        .article-item {
+            width : 800px;
+            margin: 0 auto;
+        }
+
+        .loading-more-box {
+            position: relative;
+            top     : 100px;
+        }
+    }
+
+    .tag-share-bar {
+        width   : 60px;
+        height  : 200px;
+        position: absolute;
+        right   : -80px;
+        top     : 100px;
+
+        .share-container {
+            width     : 100%;
+            height    : 100%;
+            position  : static;
+            float     : initial;
+            text-align: center;
+
+            .actions {
+                display: none
+            }
+
+            .share-title {}
+
+            .shares {
+
+                .action-icon {
+                    display      : inline-block;
+                    margin-bottom: 0;
+                    width        : 40px;
+                    height       : 40px;
+                    line-height  : 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .tag-list-container {
+        .head-tab-content {
+
+            .tag-banner {
+
+                &.has-banner {
+                    .head-title-box {
+                        padding: 10px 15px;
+                    }
+
+                    .intro-show-img {
+                        min-height: initial;
+                    }
+                }
+            }
+
+            .head-title-box {
+                padding: 40px 15px;
+                max-width: 100%;
+    
+                .head-title {
+                    justify-content: space-between;
+
+                    span {
+                        font-size: 20px;
+                    }
+                    .ant-btn {
+                        width: 56px;
+                        height: 22px;
+                        line-height: 22px;
+                        font-size: 12px;
+                    }
+                }
+
+            }
+
+            .head-tab-box{
+                width: 100%;
+                height: 40px;
+
+                .ant-row-flex {
+                    width: 100%;
+
+                    .ant-tabs-nav-wrap {
+                        width: 100vw;
+
+                        .ant-tabs-nav {
+                            width: 100%;
+                            text-align: center;
+
+                            .ant-tabs-tab {
+                                margin-right: 0;
+                                padding: 0 20px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sub-tab-content {
+            height: 50px;
+        }
+    }
+
+}

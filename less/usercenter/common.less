@@ -1,0 +1,131 @@
+.common-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  .ant-tabs-bar {
+      // background: @white;
+  }
+  .ant-tabs-nav-container {
+      border-bottom: 1px solid @border-color-base;
+  }
+  .ant-tabs-nav-scroll {
+      // padding: 0 15px;
+      // background: @white;
+  }
+  .ant-tabs-tab {
+      padding-left: 0px !important;
+  }
+  .ant-tabs-bar {
+      margin: 0;
+  }
+  .new-folder {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      float: right;
+      transition: all 0.5s;
+      cursor: pointer;
+      z-index: 10;
+      color: @primary-color;
+  }
+  .classify-tab {
+      padding: 0 30px;
+  }
+  .author-detail-header {
+      line-height: 16px;
+      padding: 30px 0 40px;
+      .extra-content {
+          float: right;
+          line-height: 40px;
+          font-family: @font-Regular;
+          font-size: 12px;
+          color: @text-subheading;
+      }
+  }
+}
+
+.usercenter-breadcrumb {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #888888;
+
+  a {
+      color: @text-base;
+
+      &:hover {
+          color: @primary-color;
+      }
+  }
+}
+
+.user-favorites {
+
+  .collection-item {
+      width: 240px;
+  }
+}
+
+
+.user-common {
+
+  .user-header {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E1E1E1;
+  }
+  .user-header-content {
+    flex: 1;
+  }
+  .user-header-title {
+    font-size: 20px;
+    color: #191919;
+  }
+
+  .user-sub-tabs {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    
+    .user-sub-tab {
+      margin-right: 30px;
+      font-size: 14px;
+      color: #666666;
+      line-height: 1.75;
+      cursor: pointer;
+
+      &.active {
+        color: @primary-color;
+      }
+    }
+  }
+
+  .user-filter-box {
+    margin: 30px 0;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
+    font-size: 14px;
+
+    .filter-label {
+      margin-right: 20px;
+      color: #999999;
+    }
+    .filter-list {
+      display: flex;
+    }
+    .filter-item {
+      padding: 10px 20px;
+      text-align: center;
+      color: #666666;
+      cursor: pointer;
+
+      &.active, &:hover {
+        color: #168DD7;
+      }
+    }
+  }
+}

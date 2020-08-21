@@ -1,0 +1,61 @@
+.shots-list-header {
+  background-color: white;
+
+  .nav-tag {
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333333;
+    cursor: pointer;
+    
+    &:hover {
+      color: @primary-color;
+    }
+    &.active {
+      color: @primary-color;
+      background-color: rgba(22,141,215,0.05);
+    }
+  }
+}
+.shots-list-nav {
+  padding: 22px 0;
+
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-left {
+      display: flex;
+      font-size: 14px;
+      color: #333333;
+
+      .sort {
+
+      }
+      .area {
+        margin-left: 40px;
+      }
+    }
+    .nav-center {
+      flex: 1;
+
+      .classify-wrapper {
+        padding: 0;
+      }
+    }
+    .nav-right {
+      
+      .ant-btn {
+        font-size: 14px;
+        color: white;
+        min-width: 100px;
+        height: 36px;
+        border-radius: 18px;
+      }
+    }
+  }
+
+ 
+}

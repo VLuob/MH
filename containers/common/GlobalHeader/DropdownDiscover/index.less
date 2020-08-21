@@ -1,0 +1,125 @@
+.header-discover-overlay {
+  padding: 20px 45px 45px;
+  width: 630px;
+  background-color: white;
+  box-shadow: 0 2px 30px 0 rgba(0,0,0,0.10);
+
+  .overlay-section {
+
+    // &.channel-section {
+    //   margin-top: 10px;
+    // }
+  }
+  .label {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666666;
+  }
+  .content {
+    .loading {
+      padding: 30px 0;
+      text-align: center;
+    }
+  }
+  .form-list {
+    margin-left: -35px;
+    margin-right: -35px;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin-bottom: 40px;
+      text-align: center;
+      width: 100px;
+      color: #333333;
+      line-height: 1;
+
+      a {
+        color: #333333;
+
+        &:hover {
+          color: @primary-color;
+        }
+      }
+
+      .form-icon {
+        font-size: 26px;
+      }
+      .form-name {
+        margin-top: 15px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .channel-list {
+    margin-left: -25px;
+    margin-right: -25px;
+    display: flex;
+
+    li {
+      width: 94px;
+      text-align: center;
+      line-height: 1;
+
+      &.divider {
+        position: relative;
+        width: 50px;
+
+        &::before {
+          content: " ";
+          position: absolute;
+          left: 50%;
+          display: block;
+          width: 0;
+          height: 100%;
+          border-left: 1px solid #EEEEEE;
+        }
+      }
+
+      .channel-icon {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        font-size: 14px;
+        text-align: 30px;
+        line-height: 30px;
+        color: white;
+
+        &.shots {
+          background-color: #6895E9;
+        }
+        &.author {
+          background-color: #FE502D;
+        }
+        &.enquiry {
+          background-color: #FCA816;
+        }
+        &.article {
+          background-color: #00BDD9;
+        }
+        &.top {
+          background-color: transparent;
+          color: #FE502D;
+          font-size: 25px;
+        }
+        &.collection {
+          background-color: transparent;
+          color: #00BDD9;
+          font-size: 25px;
+        }
+        &.topic {
+          background-color: transparent;
+          color: #6895E9;
+          font-size: 25px;
+        }
+      }
+      .channel-name {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #333333;
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+.user-author {
+    .author-list {
+      display: block;
+      padding: 40px 30px;
+      border-radius: 3px;
+      background-color: white;
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
+      margin: 0;
+    }
+}
+
+.author-item {
+  position: relative;
+  padding: 30px 0;
+  min-height: 240px;
+  border-bottom: 1px solid @border-color-base;
+
+  .cover-box {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 514px;
+    overflow: hidden;
+
+    .cover {
+      float: left;
+      margin-right: 10px;
+      width: 252px;
+      height: 180px;
+      overflow: hidden;
+      border-radius: 3px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      
+    }
+  }
+
+  .info-box {
+    margin-right: 515px;
+    .clearfix();
+
+    .avatar {
+      float: left;
+      width: 100px;
+
+    }
+
+    .info {
+      position: relative;
+      margin-left: 120px;
+    }
+
+    .name {
+      font-size: 16px;  
+      line-height: 1.8;
+    }
+
+    .intro {
+      margin-top: 10px;
+      font-size: 12px;
+
+      .area {
+        color: @text-assistant;
+      }
+    }
+
+    .stat {
+      margin-top: 10px;
+      font-size: 14px;
+      color: @text-assistant;
+      
+      
+      .stat-item {
+        padding: 0 10px;
+        border-right: 1px solid @text-assistant;
+        line-height: 1;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+          border-right: none;
+        }
+
+      }
+
+      a {
+        color: @text-assistant;
+      }
+
+      .count {
+        color: @text-base;
+      }
+    }
+
+  }
+
+  .btns {
+    margin-top: 30px;
+
+    .ant-btn {
+      width: 80px;
+      height: 32px;
+      line-height: 32px;
+      border: none;
+      border-radius: 16px;
+
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+
+      &.followed {
+        background-color: #F1F1F1;
+      }
+
+      &.btn-message {
+        color: @primary-color;
+        background-color: #E5F3FA;
+      }
+    }
+  }
+
+  .btn-icon-card {
+    margin-left: 15px;
+    // position: absolute;
+    // right: 20px;
+    // bottom: 5px;
+    cursor: pointer;
+    // color: lighten(@primary-color, 20%);
+    color: @text-assistant;
+  }
+  .btn-icon-card:hover {
+    color: @primary-color;
+  }
+}

@@ -1,0 +1,53 @@
+.brief-box {
+    padding: 20px 5.3%;
+    .avatar {
+        float: left;
+        width: 45px;
+        height: 45px;
+    }
+    .brief-meta {
+        margin-left: 65px;
+        .brief-status {
+            color: #f00;
+        }
+        .institution-tag {
+            display: inline-block;
+            width: auto;
+            margin-left: 1%;
+            margin-right: 8%;
+            padding: 0 5px;
+            background: @theme-color;
+            color: @white;
+            border-radius: 3px;
+            font-family: @font-Regular;
+            font-size: 12px;
+        }
+        li {
+            min-height: 25px;
+            line-height: 25px;
+        }
+        li:first-child {
+            color: @text-base;
+        }
+        li:last-child {
+            color: @text-assistant;
+        }
+        .brief-name {
+            font-family: @font-Regular;
+            font-size: 14px;
+            color: @text-base;
+            letter-spacing: 0;
+        }
+        .brief-name-meta {
+            font-family: @font-Regular;
+            font-size: 13px;
+            color: @text-assistant;
+        }
+    }
+    .brief-tag {
+        padding-left: 20%;
+        .ant-tag {
+            margin-bottom: 8px;
+        }
+    }
+}

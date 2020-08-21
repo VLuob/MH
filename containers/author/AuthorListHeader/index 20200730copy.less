@@ -1,0 +1,88 @@
+.author-list-header {
+  background-color: white;
+
+  .nav-tag {
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333333;
+    cursor: pointer;
+    
+    &:hover {
+      color: @primary-color;
+    }
+    &.active {
+      color: @primary-color;
+      background-color: rgba(22,141,215,0.05);
+    }
+  }
+}
+.author-list-nav {
+  padding: 22px 0;
+
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-left {
+      display: flex;
+      font-size: 14px;
+      color: #333333;
+
+      .sort {
+
+      }
+      .area {
+        margin-left: 40px;
+      }
+    }
+    .nav-center {
+      flex: 1;
+    }
+    .nav-right {
+      
+      .ant-btn {
+        font-size: 14px;
+        color: white;
+        min-width: 115px;
+        height: 32px;
+        border-radius: 16px;
+      }
+    }
+  }
+
+  .author-type-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .nav-tag {
+      margin: 0 15px;
+    }
+  }
+}
+.author-list-subnav {
+  padding: 30px 0;
+  border-top: 1px solid #F9F9F9;
+  font-size: 14px;
+  color: #333333;
+
+  .subnav-wrapper {
+    display: flex;
+    align-items: top;
+
+    .sub-nav-label {
+      padding: 5px 0;
+      width: 78px;
+    }
+    .sub-nav-content {
+      .nav-tag {
+        margin-right: 30px;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+}

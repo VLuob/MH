@@ -1,0 +1,155 @@
+.second-header {
+  background-color: white;
+  box-shadow: 0 2px 30px 0 rgba(0,0,0,0.05);
+  
+  .sub-nav-container {
+    margin: 0 auto;
+    // max-width: 1200px;
+  }
+
+  .form-nav-bar {
+    padding: 0 30px;
+    border-bottom: 1px solid #eeeeee;
+  
+    .form-nav {
+      padding: 6px 0;
+      display: flex;
+      align-items: center;
+    }
+    .form-tag {
+      margin-right: 10px;
+      padding: 5px 10px;
+      display: inline-block;
+      border-radius: 4px;
+      font-size: 14px;
+      color: #666666;
+      cursor: pointer;
+
+      &:hover {
+        color: @primary-color;
+      }
+  
+      &.active {
+        color: @primary-color;
+        background-color: rgba(22, 141, 215, 0.05);
+      }
+    }
+  }
+
+  .sub-nav-bar {
+    padding: 0 30px;
+    height: 80px;
+  }
+  .second-header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sub-nav-content {
+    flex: 1;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+  }
+  .sub-nav-item {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    margin-right: 30px;
+    
+    a {
+      color: #999999;
+
+      &:hover {
+        color: @primary-color;
+      }
+    }
+
+    &.first {
+      margin-right: 40px;
+      font-size: 24px;
+      color: #333333;
+    }
+
+    &.divider {
+      margin-right: 40px;
+      width: 1px;
+      border-left: 1px solid #eeeeee;
+    }
+  }
+
+  .sub-nav-extra {
+    .ant-btn {
+      min-width: 100px;
+      height: 36px;
+      border-radius: 18px;
+    }
+    .link-text {
+      margin-right: 30px;
+      font-size: 14px;
+      color: #999999;
+
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+}
+
+.form-nav-wrapper {
+  position: relative;
+
+  &:hover {
+    .form-nav-btn {
+      opacity: 1;
+    }
+  }
+
+  .form-nav-btn {
+    position: absolute;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    color: #999999;
+    cursor: pointer;
+    opacity: 0;
+
+    &:hover {
+      background-color: rgba(0,0,0,0.05);
+    }
+
+    &.btn-prev {
+      left: -40px;
+    }
+    &.btn-next {
+      right: -40px;
+    }
+  }
+}
+
+.sub-nav-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  /* older spec implementation */
+  -ms-scroll-snap-destination: 0% 100%;
+      scroll-snap-destination: 0% 100%;
+  -ms-scroll-snap-points-x: repeat(100%);
+      scroll-snap-points-x: repeat(100%);
+
+  /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+  &::-webkit-scrollbar {
+    height: 0px;
+  }
+
+  .form-nav {
+    min-width: 1200px;
+  }
+}

@@ -1,0 +1,216 @@
+.common-intro {
+    position: relative;
+    // width: 100%;
+    width: 238px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    .common-inner-intro {
+        position: relative;
+        display: block;
+        width: 100%;
+        min-height: 305px;
+        padding-bottom: 10px;
+        background: @white;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
+        border-radius: 3px;
+        transition: all 0.5s linear; 
+        &:hover {
+            box-shadow: 0 1px 10px 0 rgba(17,17,20,0.20);
+            border-radius: 3px;
+        }
+        .intro-detail {
+            position: relative;
+            padding: 0 15px;
+            .intro-dropdown {
+                float: right;
+                margin-left: 6px;
+                color: @text-assistant;
+            }
+        }
+        .intro-style {
+            height: 18px; 
+            line-height: 14px; 
+            margin-bottom: 12px; 
+        }
+        .title {
+            width: 100%;
+            height: 47px;
+            margin: 12px 0 14px;
+            font-family: @font-Regular;
+            font-size: 14px;
+            color: @text-base;
+            letter-spacing: 0;
+            line-height: 24px;
+            transition: all 0.5s linear;
+            &:hover {
+                color: @primary-color;
+            }
+        }
+        .imgbox {
+            position: relative; 
+            width: 100%;
+            min-height: 170px;
+        }
+        .imgbox-cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+        }
+        .imgbox-audited {
+            background: rgba(255, 255, 255, 0.7);
+        }
+        .tag-status {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+        }
+        .shots-type-img {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 50px !important;
+        }
+        .form-tag {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            display: inline-block;
+            padding: 3px 5px;
+            background: rgba(0,0,0,0.50);
+            border-radius: 2px;
+            font-size: 12px;
+            color: white;
+            line-height: 1;
+        }
+        img {
+            display: block;
+        }
+        .style {
+            display: inline-block;
+            width: 100%;
+            max-height: 18px; 
+            font-family: @font-Regular;
+            font-size: 12px;
+            color: @text-assistant;
+            letter-spacing: 0;
+        }
+        .intro-brand {
+            width: 60% !important;
+            .ant-tag {
+                max-width: 85% !important;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                cursor: pointer; 
+            }
+        }
+        .intro-times {
+            width: auto;
+            line-height: 22px;
+        }
+        .seen, .comment, .enjoy {
+            float: left;
+            padding-right: 13px;
+            font-family: @font-Medium;
+            font-size: 12px;
+            color: @text-assistant;
+            letter-spacing: 0;
+            cursor: pointer;
+            i {
+                margin-right: 5px;
+                font-size: 14px;
+            }
+        }
+        // .intro-show-img {
+        //     height: 170px;
+        // }
+        .ad-spread {
+            float: right;
+            font-size: 12px;
+            color: @text-assistant;
+            line-height: 1.5;
+            position: absolute;
+            right: 15px;
+            bottom: 0;
+        }
+
+        .wx-mini-icon {
+            float: right;
+            color: rgba(80, 161, 56, 0.8);
+            cursor: pointer;
+        }
+        .wx-mini-icon:hover {
+            color: rgba(80, 161, 56, 1);
+        }
+    }
+    .author-box {
+        display: flex; 
+        padding-top: 10px;
+        vertical-align: middle;
+        line-height: 1;
+        font-family: @font-Medium;
+        font-size: 12px;
+        color: @text-assistant;
+        letter-spacing: 0;
+        cursor: pointer;
+        .author-img {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin: 2.5px 10px 0 0;
+            background: #f5f5f5;
+            vertical-align: top;
+            border-radius: 50%;
+        }
+        .author-name {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: inline-block;
+            max-width: 192px;
+            height: 20px;
+            line-height: 22px;
+            white-space: nowrap;
+            transition: all 0.25s linear;
+            &:hover {
+                color: @primary-color;
+            }
+        }
+        .author-focus {
+            transition: all 0.5s linear;
+            &:hover {
+                color: @primary-color;
+            }
+        }
+        .author-name {
+            font-family: @font-Medium;
+            font-size: 12px;
+            color: @text-assistant;
+            letter-spacing: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .common-intro {
+        width: 100%;
+
+        .common-inner-intro {
+          height: initial !important;
+
+          .imgbox {
+            height: initial !important;
+            .intro-show-img {
+                height: initial;
+                overflow: visible;
+
+                .box-img {
+                    position: static;
+                    transform: initial;
+                }
+            }
+          }
+        }
+    }
+}

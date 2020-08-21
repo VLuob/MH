@@ -1,0 +1,221 @@
+.share-bar {
+  .mobile {
+    display: none;
+  }
+}
+
+
+.share-container {
+  position: absolute;
+  transition: left .3s, right .3s;
+  z-index: 10;
+
+  &.right {
+    right: -70px;
+    top: 120px;
+
+    &.hidden {
+      left: 3000px !important;
+    }
+  }
+
+  &.left {
+    left: -70px;
+    top: 120px;
+
+    &.hidden {
+      left: -300px !important;
+    }
+  }
+
+  .actions {
+    .action-item {
+      position: relative;
+      margin-bottom: 10px;
+      width: 40px;
+
+      .count {
+        margin-top: 5px;
+        display: block;
+        height: 20px;
+        line-height: 20px;
+        color: @text-light;
+        text-align: center;
+        font-size: 13px;
+      }
+    }
+    .action-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 40px;
+      text-align: center;
+      line-height: 40px;
+      // background-color: @text-light;
+      background-color: #5987FF;
+      color: @white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color .3s;
+
+      &.favor {
+        background-color: rgba(255, 0, 80, 0.6);
+      }
+
+      &:hover, &.active {
+        background-color: #FF0050;
+      }
+
+      &.collection:hover, &.collection.active {
+        background-color: @black;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: @white;
+      }
+    }
+  }
+
+  &.not-actions {
+    .share-title {
+      margin: 0 5px 20px;
+      padding: 0 0 10px;
+    }
+  }
+
+  .share-title {
+    margin-top: 10px;
+    border-bottom: 1px solid @text-light;
+    color: @text-light;
+    font-size: 13px;
+    margin: 20px 5px;
+    padding: 10px 0;
+  }
+
+  .shares {
+    padding: 0 5px;
+    .action-icon {
+      width: 25px;
+      height: 25px;
+      border-radius: 25px;
+      text-align: center;
+      line-height: 25px;
+      margin-bottom: 20px;
+      color: @text-light;
+      font-size: 20px;
+      cursor: pointer;
+      
+      a {
+        color: @text-light;
+      }
+
+      
+      &.wx a:hover, &.wx a {
+        color: #47B233;
+      }
+      
+      &.weibo a:hover, &.weibo a {
+        color: #FF7960;
+      }
+
+      &.qq a:hover, &.qq a {
+        color: #518EF1;
+      }
+
+      &.card a:hover, &.card a {
+        color: #168DD7;
+      }
+
+      &.mini-app a {
+        color: rgba(80, 161, 56, 0.8);
+      }
+      &.mini-app a:hover {
+        color: rgba(85, 183, 55, 1);
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1366px) {
+  .share-container {
+
+    &.left {
+      left: -60px;
+    }
+    &.right {
+      right: -60px;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .share-bar {
+
+    &.mobile {
+      display: block;
+    }
+
+    &.shots {
+
+    }
+
+    &.article {
+      .share-container {
+        padding: 0;
+      }
+    }
+
+      .share-container {
+        position: static;
+        float: initial;
+        padding: 0 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
+
+        .actions {
+          float: right;
+
+          .clearfix();
+        }
+
+        .action-item {
+          display: inline-block;
+          margin-bottom: 0;
+          margin-left: 10px;
+
+          &.favor {
+            display: none;
+          }
+
+          .count-text {
+            margin-right: 10px;
+            color: @text-light;
+          }
+
+          .count {
+            display: none;
+          }
+
+        }
+
+        .share-title {
+          display: none;
+        }
+
+        .shares {
+
+          .action-icon {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 0;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+          }
+        }
+    }
+  }
+}

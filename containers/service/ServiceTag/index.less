@@ -1,0 +1,54 @@
+.service-tag {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  padding: 3px 5px;
+  border-radius: 2px;
+  font-size: 12px;
+  color: white;
+  line-height: 1;
+  background: #FF5B00;
+}
+
+.service-popover-wrapper {
+  padding: 0 10px;
+  width: 330px;
+
+  .loading {
+    padding: 30px 0;
+    text-align: center;
+  }
+}
+.service-popover-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #EEEEEE;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .name {
+    font-size: 14px;
+    color: #333333;
+  }
+  .price {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 1;
+  }
+  .btns {
+    margin-top: 15px;
+    .ant-btn {
+      min-width: 82px;
+      height: 26px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .service-popover-wrapper {
+    width: 280px;
+  }
+}

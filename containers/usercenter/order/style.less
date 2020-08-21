@@ -1,0 +1,198 @@
+.common-container.user-order {
+  width: initial;
+
+  .user-header {
+
+    .title {
+      font-size: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e1e1e1;
+    }
+  }
+
+  .user-tabs {
+
+    .ant-tabs-tab {
+      position: relative;
+      font-size: 13px;
+
+      .tab-text {
+        position: relative;
+      }
+    }
+
+    .ant-tabs-bar {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e1e1e1;
+
+    }
+
+    .ant-tabs-nav-container {
+      border-bottom: none;
+    }
+
+  }
+
+  .ant-tabs .ant-tabs-tab {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+  }
+
+  .user-order-box {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+    
+    .order-content {
+      .ant-table-tbody {
+        font-size: 12px;
+      }
+    }
+  }
+
+
+  .meal-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #e1e1e1;
+
+    .author-avatar {
+      float: left;
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .author-info {
+      margin-left: 55px;
+    }
+    .author-intro {
+      margin-top: 10px;
+      line-height: 1;
+
+    }
+    .author-company {
+      margin-left: 10px;
+      font-size: 12px;
+      color: #888;
+    }
+
+    .meal-item-bottom {
+      margin-top: 15px;
+      line-height: 32px;
+      font-size: 12px;
+      color: #666;
+
+      .text {
+        margin-right: 20px;
+      }
+
+      .btns {
+        margin-top: 10px;
+      }
+
+      .ant-btn {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .order-header {
+    margin-bottom: 20px;
+    line-height: 1.75;
+
+    .title {
+      font-size: 14px;
+      
+    }
+
+    .intro {
+      float: right;
+      font-size: 14px;
+      color: #888;
+    }
+  }
+
+  .order-footer {
+    margin-top: 20px;
+    text-align: right;
+    
+
+    .text {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .ant-btn {
+      margin-left: 15px;
+
+    }
+  }
+}
+
+.voucher-uploading-container {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  // background-color: rgba(0,0,0,.5);
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  .voucher-content {
+    text-align: center;
+  }
+
+  .voucher-upload-area {
+    margin: 50px 0;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #999999;
+    border: 1px dashed #eeeeee;
+    background-color: #F4F6F9;
+    cursor: pointer;
+
+    &:hover {
+      border-color: @primary-color;
+      color: @primary-color;
+    }
+  }
+
+  .voucher-thumb {
+    max-width: 450px;
+    max-height: 350px;
+
+    img {
+      max-width: 450px;
+      max-height: 350px;
+    }
+  }
+  .voucher-text {
+    margin-top: 30px;
+    // color: white;
+
+    .error {
+      color: @error-color;
+    }
+  }
+  .voucher-progress {
+    margin: 30px auto 0;
+    max-width: 300px;
+
+  }
+  .voucher-btns {
+    margin-top: 30px;
+  }
+}

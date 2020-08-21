@@ -1,0 +1,161 @@
+
+.modal-card-container {
+  overflow: hidden;
+  
+  .card-header {
+    margin-bottom: 20px;
+  }
+
+  .card-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    color: @text-assistant;
+    cursor: pointer;
+
+    &:hover {
+      color: @text-base;
+    }
+
+  }
+  
+  .card-footer {
+    margin-top: 40px;
+
+    .card-btns {
+      text-align: center;
+
+      .ant-btn {
+        width: 110px;
+        height: 40px;
+        line-height: 40px;
+
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .card-container {
+    width: 392px;
+    min-height: 480px;
+    max-height: 600px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    img {
+      width: 372px;
+    }
+
+    
+    iframe {
+      position: absolute;
+      z-index: -2;
+      // width: 100%;
+      height: 560px;
+      width: 750px
+    }
+  }
+
+  .card-share-icons {
+    .clearfix();
+
+    li {
+      float: left;
+      margin-right: 20px;
+
+      a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+
+        &:hover.weibo, &.weibo {
+          color: #DF6660;
+          border-color: #DF6660;
+        }
+
+        &:hover.wechat, &.wechat {
+          color: #47B233;
+          border-color: #47B233;
+        }
+      }
+    }
+  }
+
+  .card-share-warpper {
+    .btn-return {
+      float: right;
+      font-size: 20px;
+      line-height: 40px;
+      color: @text-assistant;
+      cursor: pointer;
+    }
+  }
+}
+
+.create-card-container {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  margin: auto;
+  width: 750px;
+  z-index: 200;
+}
+
+.share-card-iframe {
+  position: absolute;
+  top: -3000px;
+  z-index: -2;
+}
+
+.card-create-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .text {
+    margin-top: 15px;
+    color: #ccc;
+  }
+}
+
+
+@media screen and (max-width: 460px) {
+  .modal-card {
+    max-width: 100vw;
+    min-width: 320px;
+
+    .card-header {
+      margin: 0 20px 20px;
+    }
+    
+    .ant-modal-body {
+      padding: 24px 0;
+
+    }
+
+    .card-container {
+      margin: 0 auto;
+      max-width: 100vw;
+    }
+
+    .card-share-warpper {
+      padding: 0 20px;
+    }
+  }
+}

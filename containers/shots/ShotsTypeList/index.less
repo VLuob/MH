@@ -1,0 +1,128 @@
+.detail-type-list {
+  // padding: 0 15px;
+
+  .type-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    font-size: 14px;
+
+    &.brand {
+
+      .ant-tag {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    &.service {
+      display: block;
+
+      .type-item-content {
+        padding-top: 15px;
+      }
+    }
+  }
+  .type-item-name {
+    display: flex;
+    align-items: center;
+    min-width: 108px;
+
+    .icon {
+      margin-right: 12px;
+      color: #B9C4CF;
+      font-size: 18px;
+    }
+    .name {
+      color: #666666;
+    }
+  }
+  .type-item-content {
+
+    color: #73828C;
+    a {
+      color: #73828C;
+    }
+    .ant-tag {
+      margin-bottom: 15px;
+      padding: 4px 10px;
+      background-color: #F4F6F9;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .related-tags {
+      margin-top: 0;
+    }
+
+    .download-list {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .download-item {
+      font-size: 15px;
+      margin-bottom: 20px;
+
+
+      .download-name {
+        cursor: pointer;
+      }
+
+      .download-info {
+        margin-top: 10px;
+        padding-left: 30px;
+        color: @text-assistant;
+        font-size: 13px;
+      }
+    }
+
+    .download {
+      margin-top: 50px;
+
+      .ant-btn {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        font-size: 15px;
+      }
+
+      .download-info {
+        margin-top: 10px;
+        color: @text-light;
+      }
+    }
+  }
+
+  
+  &.shots-type-list-mobile {
+    
+    .shots-detail-service {
+      display: block;
+  
+      .shots-service-item {
+        width: initial;
+  
+        .service-cover {
+          width: 112px;
+        }
+
+        .service-name {
+          font-size: 14px;
+          color: #333333;
+          letter-spacing: 0;
+          line-height: 24px;
+          height: 42px;
+        }
+        .service-price {
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.popup-modal {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin: auto;
+    width: 790px;
+    // height: 500px;
+    max-width: 100vw;
+    max-height: 100vh;
+    z-index: 100;
+    
+    .close-btn {
+        position: absolute;
+        top: -13px;
+        right: -13px;
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+        background: @white;
+        border-radius: 50%;
+        transition: all 0.2s linear;
+        cursor: pointer;
+        &:hover {
+            background: @theme-color;
+            color: @white;
+        }
+    }
+
+    a {
+        // display: block;
+        height: 100%;
+    }
+
+    img {
+        // display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .close-tip {
+        position: absolute;
+        top: 20px;
+        right: 19px;
+        font-family: @font-Semibold;
+        letter-spacing: 0.34px;
+        line-height: 28px;
+        font-size: 20px;
+        color: @text-base;
+        cursor: default;
+        .second-box {
+            padding: 0 5px;
+            color: #FF1313;
+        }
+    }
+}

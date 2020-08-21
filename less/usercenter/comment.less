@@ -1,0 +1,151 @@
+.common-container {
+
+  &.user-message, &.user-letter {
+    width: initial;
+  }
+}
+
+.common-container.user-message {
+
+  .user-header {
+
+    .title {
+      font-size: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e1e1e1;
+    }
+  }
+
+  .user-tabs {
+
+    .ant-tabs-tab {
+      position: relative;
+      font-size: 13px;
+
+      .tab-text {
+        position: relative;
+      }
+    }
+
+    .ant-tabs-bar {
+      border-bottom: 1px dashed #e1e1e1;
+
+    }
+
+    .ant-tabs-nav-container {
+      border-bottom: none;
+    }
+
+    .load-spining {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 50px;
+      text-align: center;
+      background-color: rgba(255,255,255, .4);
+    }
+  }
+
+  .dot-count {
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    display: block;
+    color: #ffffff;
+    background-color: #FF0800;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 2px 5px;
+    border-radius: 10px;
+  }
+}
+.user-comment-container {
+
+  .tabs {
+    margin-top: 10px;
+    
+    .clearfix();
+
+    li {
+      float: left;
+      margin-right: 40px;
+      padding: 10px 0;
+      cursor: pointer;
+
+      &.active {
+        color: @primary-color;
+      }
+
+      .tab-text { 
+        position: relative;
+      }
+    }
+  }
+
+  .comment-box-wrapper {
+    position: relative;
+  }
+
+  .comment-box {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: @white;
+    border-radius: 3px;
+
+  }
+
+  .comment-main {
+    margin-top: 0;
+  }
+
+  .comment-list {
+    margin-top: 0;
+  }
+
+  .comment-item {
+    margin-bottom: 0;
+    padding: 30px 0;
+    border-bottom: 1px solid @text-lightest;
+
+    .reply-author-intro {
+      margin-left: 5px;
+      color: @text-assistant;
+
+      .title {
+        color: @primary-color;
+      }
+
+      .nickname {
+        color: @text-base;
+      }
+      a.nickname {
+        color: @primary-color;
+      }
+    }
+
+    .comment-actions {
+
+      .btn-reply {
+        padding: 10px 20px;
+        border-radius: 2px;
+        font-size: 12px;
+        color: @text-base;
+        background-color: #F1F1F1;
+      }
+    }
+
+    .comment-message {
+      margin-bottom: 0;
+    }
+  }
+
+  .comment-footer {
+    margin-top: 50px;
+    
+    .ant-pagination {
+      text-align: right;
+    }
+  }
+}

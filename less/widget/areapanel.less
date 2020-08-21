@@ -1,0 +1,90 @@
+.area-panel {
+    position: absolute;
+    top: 63px;
+    right: 0;
+    width: 575px;
+    // height: 525px;
+    padding: 20px 20px 30px;
+    background: @white;
+    z-index: 10;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.10);
+    .area-meta {
+        display: inline-block;
+        width: 105px;
+        height: 40px;
+        margin-right: 12px;
+        line-height: 40px;
+        background: rgba(0,140,214, 0.1);
+        border-radius: 2px;
+        font-family: @font-Regular;
+        font-size: 14px;
+        text-align: center;
+        color: #333333;
+        letter-spacing: 0.24px;
+        cursor: pointer;
+    }
+    .search-part {
+        margin-bottom: 14px;
+        .ant-input-suffix {
+            display: none !important;
+        }
+
+    }
+    .area-input {
+        width: 328px !important;
+        height: 40px;
+        margin-bottom: 20px;
+        border-radius: 2px;
+    }
+    .ant-tabs-bar {
+        border: none;
+    }
+    .ant-tabs-tab {
+        margin-right: 0 !important;
+        border-radius: 0 !important;
+        border: none !important;
+        background: #F4F4F4 !important;
+        font-family: @font-Regular !important;
+        font-size: 14px !important;
+        color: @text-base !important;
+        letter-spacing: 0.24px !important;
+    }
+    .ant-tabs-tab-active {
+        color: @primary-color !important;
+    }
+    .area-address {
+        width: 100%;
+        line-height: 40px;
+        padding: 0 35px;
+        color: @primary-color;
+        .area-provinces {
+            float: left;
+            padding-right: 30px;
+            font-family: @font-Medium;
+            font-size: 14px;
+            color: @text-base;
+            letter-spacing: 0.24px;
+            cursor: pointer;
+            &:hover {
+                color: fade(@primary-color, 65%);
+            }
+        }
+        .area-cities-group {
+            padding-left: 75px;
+        }
+        .area-cities {
+            padding-right: 10px;
+            font-family: @font-Regular;
+            font-size: 14px;
+            color: @text-base;
+            letter-spacing: 0.24px;
+            cursor: pointer;
+            &:hover {
+                color: fade(@primary-color, 65%);
+            }
+        }
+    }
+    .ant-tabs-tab {
+        padding: 0 18.2px !important;
+    }
+}

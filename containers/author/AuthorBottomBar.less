@@ -1,0 +1,50 @@
+.author-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  border-top: 1px solid #f1f1f1;
+  background-color: white;
+
+  .operation-btns {
+    padding: 0 10px;
+    width: 128px;
+    // text-align: center;
+
+    .btn-wrapper {
+      padding: 5px 5px;
+      display: inline-block;
+      // width: 50%;
+      width: 100%;
+      height: 48px;
+      color: #999999;
+      text-align: center;
+
+      .icon {
+        font-size: 16px;
+        line-height: 1;
+      }
+
+      .btn-text {
+        margin-top: 2px;
+        line-height: 1;
+        font-size:  12px;
+      }
+    }
+  }
+
+  .enquiry-btn {
+    flex: 1;
+    line-height: 48px;
+    background-color: @primary-color;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+  }
+
+}

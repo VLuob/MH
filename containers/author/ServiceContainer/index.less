@@ -1,0 +1,36 @@
+.author-service-box {
+
+}
+
+.author-service-content {
+  padding-top: 20px;
+
+  .service-content {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .author-service-box {
+    .author-header {
+      display: none;
+    }
+  }
+
+  .author-service-content {
+
+    .service-content {
+      margin-left: initial;
+      margin-right: initial;
+      padding: 0 15px 70px;
+
+      .service-item {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}

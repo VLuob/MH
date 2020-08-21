@@ -1,0 +1,99 @@
+
+.shots-list-container {
+  margin: 0 auto;
+  max-width: 1580px;
+}
+
+.shots-list-wrapper {
+  position: relative;
+
+  .btn-refresh {
+    position: absolute;
+    top: 0;
+    left: -60px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    text-align: center;
+    color: #999999;
+    line-height: 1.3;
+    background: #FFFFFF;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.10);
+    cursor: pointer;
+
+    &:hover {
+      color: @primary-color;
+    }
+
+    .iconfont {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .shots-list {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .common-intro {
+    margin: 0 15px 20px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .shots-list-container {
+    max-width: 1200px;
+  }
+  .shots-list-wrapper {
+  
+    .shots-list {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+  
+    .common-intro {
+      margin: 0 10px 20px;
+      width: 285px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .shots-list-container {
+    margin-top: 40px;
+    max-width: 506px;
+  }
+  .shots-list-wrapper {
+  
+    .shots-list {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  
+    .common-intro {
+      margin: 0 15px 30px;
+      width: 238px;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .shots-list-container {
+    margin-top: 20px;
+    max-width: 506px;
+  }
+  .shots-list-wrapper {
+  
+    .shots-list {
+      margin-left: initial;
+      margin-right: initial;
+    }
+  
+    .common-intro {
+      margin: 0 15px 20px;
+      width: 100%;
+    }
+  }
+}

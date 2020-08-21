@@ -1,0 +1,56 @@
+
+
+.user-oauth-list {
+  padding: 30px 0;
+  overflow: hidden;
+
+  .oauth-item {
+    float: left;
+    margin-right: 20px;
+    padding: 30px 30px 20px;
+    width: 190px;
+    text-align: center;
+    font-size: 13px;
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
+
+    .name {
+      margin-top: 10px;
+      color: @text-assistant;
+
+      &.bind {
+        color: @text-base;
+      }
+    }
+
+    .btn {
+      margin-top: 10px;
+      display: inline-block;
+      width: 100%;
+      line-height: 34px;
+      color: white;
+      border-radius: 3px;
+
+      &.weibo {
+        background-color: #FF7960;
+      }
+
+      &.wechat {
+        background-color: #47B233;
+      }
+
+      &.qq {
+        background-color: #518EF1;
+      }
+
+      &.mingdao {
+        background-color: #2096F3;
+      }
+
+      &.bind{
+        color: @text-assistant;
+        background-color:  #DBDBDB;
+      }
+    }
+  }
+}

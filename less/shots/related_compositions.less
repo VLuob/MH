@@ -1,0 +1,157 @@
+
+
+.related-compositions {
+  padding-top: 30px;
+
+  .title {
+    font-size: 24px;
+    color: @text-assistant;
+    letter-spacing: 0;
+
+    .more {
+      float: right;
+      font-size: 12px;
+      color: #999999;
+      line-height: 36px;
+    }
+  }
+  .list {
+    position: relative;
+    margin-top: 20px;
+
+    .ant-row-flex {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+
+    .ant-col {
+      padding: 0 10px;
+    }
+
+    .common-intro {
+      width: 258px;
+      
+    }
+
+    .common-inner-intro {
+      min-height: 330px;
+    }
+
+    .imgbox {
+      min-height: 184px;
+    }
+
+    .part-loading-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 50px 0;
+    }
+  }
+
+  .load-more-box {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .article-layout .related-compositions {
+
+    .list {
+
+      .common-intro {
+        width: 224px;
+      }
+  
+      .common-inner-intro {
+        padding-bottom: 15px;
+        min-height: 287px;
+
+        .imgbox {
+          min-height: 160px;
+        }
+        .box-img {
+          width: 100%;
+          // height: 170px;
+        }
+
+        .title {
+          margin-bottom: 14px;
+        }
+
+        .intro-style {
+          margin-bottom: 10px;
+          line-height: 1;
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .related-compositions .related-container {
+    width: initial !important;
+  }
+  .related-compositions {
+    padding: 30px 0;
+
+    .related-container {
+
+      .header {
+        padding: 0 20px;
+      }
+
+      .list {
+        padding: 0 5px;
+
+        .ant-row-flex {
+          margin: 0;
+        }
+
+        .ant-col {
+          padding: 0;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+        }
+        .common-intro {
+          width : calc(100% - 16px);
+
+          .author-box {
+            display: none;
+          }
+        }
+
+        .common-inner-intro {
+          height: auto;
+
+          .imgbox, .intro-show-img, .box-img {
+            // height: 286px;
+          }
+
+          .intro-operation {
+            display: none;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+        
+      }
+
+      .collection-list {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 15px;
+      }
+    }
+
+    .load-more-box {
+      margin: 20px;
+    }
+  }
+}
